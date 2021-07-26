@@ -1,0 +1,535 @@
+/* reset css */
+
+@font-face {
+    font-family: 'W-Droge';
+    src: url('../css/Web-fonts/W-Droge-Itinerary.woff2') format('woff2'), url('../css/Web-fonts/W-Droge-Itinerary.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'W-Droge', sans-serif;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* start css */
+
+
+/* navbar */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.fun-navbar {
+    justify-content: flex-end;
+}
+.user-icon img {
+    width: 50px;
+}
+
+.nav-item {
+    font-size: 14px;
+    margin: 0px 15px;
+    border-bottom: 2px solid transparent;
+    font-family: 'W-Droge', sans-serif;
+}
+
+.nav-item.active-nav {
+    border-bottom: 2px solid #F3B95A;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #F3B95A;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #515151 !important;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(149, 129, 206, 1);
+}
+
+.navbar {
+    background-color: #FBF9F4;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.nav-logo {
+    width: 100%;
+}
+
+.search-bars {
+    outline: none !important;
+    background-color: #185641;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    font-weight: 600;
+}
+
+.search-buttn {
+    display: none;
+    background-color: #185641;
+    color: #fff;
+    padding: 3px 16px 5px 16px;
+    border-radius: 6px;
+    font-size: 19px;
+    border: none;
+}
+
+/* dropDown */
+.dropdown-menu {
+    border-radius: 5px;
+    left: -30px;
+    min-width: 9rem;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.16), inset 0px 2px 0px #FFFFFF;
+}
+.dropdown-menu li {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #515151;
+}
+.dropdown-menu li img {
+    margin-right: 5px;
+}
+.dropdown-menu li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #515151;
+}
+.dropdown-menu li a:hover {
+    color: #515151;
+}
+/* modals css */
+
+.modal {
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.modal-backdrop {
+    position: unset !important;
+}
+
+.modal-dialog {
+    background: #fff !important;
+    border-radius: 20px;
+}
+
+.modal-title {
+    color: #fff !important;
+    font-size: 1.5rem !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.close {
+    color: #9a999b !important;
+    position: absolute;
+    right: 25px !important;
+    top: 15px !important;
+    z-index: 1;
+    outline: none !important;
+}
+
+.opacity-animate3 {
+    animation: opt-animation3 1s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.modal-content {
+    border-radius: 10px;
+    background: #fff !important;
+    border: none !important;
+    border-radius: none !important;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+}
+
+.modal-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content {
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.logo-div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hire_us_head {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal_descripition {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login_input,
+.login_input_pswrd {
+    border: 1px solid rgba(10, 20, 47, 0.3);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none !important;
+}
+
+.input_login_btn {
+    border: none;
+    background: #185641;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none !important;
+    margin-bottom: 5px;
+}
+
+.input-group-addon {
+    width: 100%;
+    text-align: right;
+}
+
+.forgot_link {
+    font-size: 18px;
+    color: #515151;
+}
+
+.forgot_link:hover {
+    color: #515151;
+}
+
+.or {
+    font-weight: bold;
+    font-size: 20px;
+    color: #515151;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.google-btn-div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.google-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    outline: none !important;
+    padding: 10px 15px;
+    color: #515151;
+}
+
+.google-btn img {
+    margin-right: 5px;
+}
+
+.facebook-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background: #1877F2;
+    border-radius: 10px;
+    outline: none !important;
+    color: #FFF;
+}
+
+.facebook-btn img {
+    margin-right: 5px;
+}
+
+.sgn_up_hed {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #515151;
+}
+
+.sgn_up_hed a {
+    color: #515151;
+}
+
+.sgn_up_hed a:hover {
+    color: #515151;
+}
+
+@-webkit-keyframes opt-animation3 {
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes opt-animation3 {
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes opt-animation3 {
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes opt-animation3 {
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 400px;
+        margin: 1.75rem auto;
+    }
+}
+
+
+/* navbar close */
+
+@media (max-width: 992px) {
+    .search-bars {
+        display: none;
+    }
+    .search-buttn {
+        display: block;
+    }
+    .hreo-input {
+        width: auto !important;
+    }
+    .navbar-collapse {
+        text-align: center;
+        padding-bottom: 20px !important;
+    }
+    .mobile-view {
+        display: block;
+        margin: 0 auto;
+    }
+    .desktop-view {
+        display: none;
+    }
+}
+@media (min-width: 993px) {
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+}

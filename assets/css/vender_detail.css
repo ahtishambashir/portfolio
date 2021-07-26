@@ -1,0 +1,349 @@
+.vene-main {
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.wedding-types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slick-list {
+    padding: 0px 50px 0px 0px !important;
+}
+
+.titel-hiding {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: #515151;
+}
+
+.about-venue {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #515151;
+    line-height: 40px;
+}
+
+.detail-vanue {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    /* text-align: justify;  */
+    color: #515151;
+}
+
+.vender-add {
+    background: #F3B95A;
+    border-radius: 6px;
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none !important;
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+
+.click-add {
+    margin-left: 10px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.more-detail {
+    margin-bottom: 30px;
+}
+
+.learn-more {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: #515151;
+    margin-top: 15px;
+}
+
+.facilitie-titel {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 50px;
+    color: #515151;
+    margin-top: 10px;
+}
+
+.titel-more-hiding {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: #515151;
+    margin-top: 50px;
+}
+
+.our-facilitie ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.implement-tag {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #515151;
+}
+
+.contect-us {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 30px 50px 100px rgba(81, 81, 81, 0.2);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.contect-titel {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #515151;
+    margin-bottom: 10px;
+}
+
+
+/* ===Form=== */
+
+.form-control {
+    padding: 25px 15px;
+}
+
+.our-price {
+    padding: 15px 30px;
+    background: #B5B9C1;
+    color: #515151;
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+
+/* ====Drope down==== */
+
+
+/*Dropdown*/
+
+.dropdown {
+    width: 100%;
+    border: 0.1em solid #c0cdd1;
+    padding: 7px 12px 6px 8px;
+    border-radius: 4px;
+}
+
+.drop-form {
+    padding: 25px 10px;
+}
+
+.js-link {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #6f6e6e;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none !important;
+}
+
+.js-linkt:focus {
+    background: #ecf0f1;
+}
+
+.js-link:active {
+    background: #fbfcfc;
+}
+
+
+/* .fa {
+float: right;
+} */
+
+.js-link:hover {
+    color: #515151;
+}
+
+
+/*List*/
+
+.js-dropdown-list {
+    display: none;
+    border-top: 0.1em solid #c0cdd1;
+}
+
+.slect-option {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slect-option:not(:first-child) {
+    border-top: 0.1em dashed #dde4e6;
+}
+
+.slect-option:focus,
+.slect-option:hover {
+    background: #ecf0f1;
+}
+
+.slect-option:active {
+    background: #fbfcfc;
+}
+
+.fa-chevron-down {
+    color: #F3B95A !important;
+}
+
+
+/* ====Drope down==== */
+
+.my-mape {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #515151;
+}
+
+.locaton-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.our-contect {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.lovation-in {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.fiend-location {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.map-checkin {
+    width: 100%;
+    padding-top: 30px;
+}
+
+
+/* =====carisul-clider===== */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+    margin: 5px;
+}
+
+.slick-slide img {
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+
+/* =====carisul-clider close===== */
+
+@media (max-width: 991px) {
+    .wrapper {
+        height: 70vh;
+    }
+    .wedding-types {
+        height: 65vh;
+    }
+    .vene-main {
+        height: auto;
+    }
+    .more-detail {
+        margin-top: 0;
+    }
+    .titel-more-hiding {
+        margin-top: 10px;
+    }
+    .vender-add {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 526px) {
+    .wedding-types {
+        height: 75vh;
+    }
+    .wrapper {
+        height: auto;
+    }
+    .our-vanue {
+        width: 90%;
+    }
+    .top-off {
+        margin-top: 35px !important;
+    }
+    .modal-content {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width: 375px) {
+    .lovation-in {
+        flex-direction: column;
+    }
+    .contect-us {
+        padding: 30px;
+    }
+}

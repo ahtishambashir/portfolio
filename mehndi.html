@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is pyar</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link
+        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- ======Navebar section======    -->
+    <header class="hero-section">
+        <nav class="navbar navbar-expand-lg navbar-light header">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/nav logo.png" class="nav-logo" alt="Logo">
+                </a>
+                <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse fun-navbar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active-nav">
+                            <a class="nav-link" href="">Dashboard Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Wedding Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Venues</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Help</a>
+                        </li>
+                        <div class="dropdown mobile-view">
+                            <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/images/user-image.png" alt="user-image">
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                        My Profile
+                                    </a></li>
+                                <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                        Log Out
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </ul>
+
+                </div>
+                <div class="dropdown desktop-view">
+                    <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="./assets/images/user-image.png" alt="user-image">
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                My Profile
+                            </a></li>
+                        <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                Log Out
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- ======Navebar section close======   -->
+    </header>
+    <section class="icon-section">
+        <div class="container">
+            <div class="main-icon-div">
+                <a href="#">
+                    <div class="img-div bg-1">
+                        <img src="./assets/images/home.svg" alt="home-icon">
+                    </div>
+                    <p>
+                        Home
+                    </p>
+                </a>
+                <a href="#">
+                    <div class="img-div bg-2">
+                        <img src="./assets/images/engagment.svg" alt="home-icon">
+                    </div>
+                    <p>
+                        Engagement
+                    </p>
+                </a>
+                <a href="#">
+                    <div class="img-div bg-3">
+                        <img src="./assets/images/bride.svg" alt="home-icon">
+                    </div>
+                    <p>
+                        Bridal Shower
+                    </p>
+                </a>
+                <a href="#">
+                    <div class="img-div bg-4 active">
+                        <img src="./assets/images/mehndi_two.png" alt="home-icon">
+                    </div>
+                    <p>
+                        Mehndi
+                    </p>
+                </a>
+                <a href="#">
+                    <div class="img-div bg-5">
+                        <img src="./assets/images/nikkah.svg" alt="home-icon">
+                    </div>
+                    <p>
+                        Nikkah
+                    </p>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#addEvent">
+                    <div class="img-div bg-6">
+                        <img src="./assets/images/add-icon.svg" alt="home-icon">
+                    </div>
+                    <p>
+                        Add More Events
+                    </p>
+                </a>
+                <div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal_center">
+                        <div class="modal-dialog add-modal opacity-animate3">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <div class="modal_content">
+                                        <div class="modal-inner-div">
+                                            <select name="add_Event" id="add_Event" class="add-event">
+                                                <option value="nikah">Add new event</option>
+                                                <option value="nikah">Nikkah</option>
+                                                <option value="nikah">Nikkah</option>
+                                                <option value="nikah">Nikkah</option>
+                                            </select>
+                                            <div class="ui calendar" id="example2">
+                                                <div class="ui input left icon">
+
+                                                    <input type="text" placeholder="Add event date">
+                                                    <i class="calendar icon"></i>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="add-event-btn">
+                                                Add Event
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-head">
+                <h2>Bridal Shower</h2>
+                <a href="#">Edit My Profile</a>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="date-picker-div">
+                        <div class="ui calendar" id="example3">
+                            <div class="ui input left icon">
+    
+                                <input type="text" placeholder="Add event date">
+                                <i class="calendar icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color-schem">
+                        <h2>
+                            Color Scheme      
+                        </h2>
+                        <div class="select-clr">
+                            <img src="./assets/images/clr-one.png" alt="">
+                            <img src="./assets/images/clr-two.png" alt="">
+                            <img src="./assets/images/clr-three.png" alt="">
+                            <img src="./assets/images/clr-four.png" alt="">
+                            <img src="./assets/images/add-clr.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="counter-main-div">
+                        <img src="./assets/images/counter-img.svg" alt="">
+                    </div>
+                    <div class="camera-div">
+                        <a href="#">
+                            <img src="./assets/images/camera-icon.svg" alt="">
+                        </a>
+                    </div>
+                    <div id="countdown" class="count-down-div">
+                        <ul>
+                            <li><span id="days"></span>days</li>
+                            <li><span id="hours"></span>Hours</li>
+                            <li><span id="minutes"></span>Minutes</li>
+                            <li><span id="seconds"></span>Seconds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="venue-section">
+        <div class="container">
+            <h2 class="venue-head">
+                Your Venue(s)
+            </h2>
+            <div class="venue-main-div">
+                <p>
+                    Find trusted hand-selected wedding venues for your big day.
+                </p>
+                <a href="#">
+                View All
+            </a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Double Tree Arlington, VA</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Double Tree Arlington, VA</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Double Tree Arlington, VA</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#" data-toggle="modal" data-target="#addVenue">
+                            <img src="./assets/images/venu-add.svg" alt="" >
+                            <span>Add Your Own</span>
+                        </a>
+                        <div class="modal fade" id="addVenue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal_center">
+                                <div class="modal-dialog add-modal opacity-animate3">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <div class="modal_content">
+                                                <div class="modal-inner-div">
+                                                    <h2>
+                                                        Add Venue
+                                                    </h2>
+                                                    <input type="text" class="vender-input" placeholder="EM Photography">
+                                                    <h4>OR</h4>
+                                                    <button type="button" class="add-btn">Search Vendors</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="venue-section">
+        <div class="container">
+            <h2 class="venue-head">
+                Your Vendor(s)
+            </h2>
+            <div class="venue-main-div">
+                <p>
+                    Select the best team to bring your wedding to life.
+                </p>
+                <a href="#">
+                View All
+            </a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Eikon Photo</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>MNE Events</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>GEM Photography</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/venu-add.svg" alt="">
+                            <span>Add Your Own</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wedding-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wed-main-div">
+                        <div class="left-div">
+                            <h2 class="wed-head">
+                                To Do List
+                            </h2>
+                        </div>
+                        <div class="right-div">
+                            <a href="#">
+                            View All 
+                            </a>
+                        </div>
+                    </div>
+                    <p class="wed-detail">
+                        Keep all your wedding tasks in one place.
+                    </p>
+                    <ul class="to-do-list">
+                        <li>
+                            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.Lorem ipsum dolor sit .
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.Lorem ipsum dolor sit .
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.Lorem ipsum dolor sit .
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.Lorem ipsum dolor sit .
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wedding-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="wed-main-div">
+                        <div class="left-div">
+                            <h2 class="wed-head">
+                                Budget
+                            </h2>
+                        </div>
+                        <div class="right-div">
+                            <a href="#">
+                                Add Cost
+                            </a>
+                        </div>
+                    </div>
+                    <p class="wed-detail">
+                        Organize your budget as a whole, by event, or by categpry.
+                    </p>
+                    <h3 class="estimate-head">
+                        Estimated Budget
+                    </h3>
+                    <h2 class="price">
+                        $65,000
+                    </h2>
+                    <h3 class="estimate-head-2">
+                        Final Cost
+                    </h3>
+                    <h2 class="price">
+                        $0
+                    </h2>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="wed-main-div">
+                        <div class="left-div">
+                            <h2 class="wed-head">
+                                Guest List
+                            </h2>
+                        </div>
+                        <div class="right-div">
+                            <a href="#">
+                                Add Guest 
+                            </a>
+                        </div>
+                    </div>
+                    <p class="wed-detail">
+                        Manage your guest list as a whole and by event.
+                    </p>
+                    <h2 class="guest">
+                        500
+                        <span>
+                        Guests
+                    </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="venue-section">
+        <div class="container">
+            <h2 class="venue-head">
+                Inspiration
+            </h2>
+            <div class="venue-main-div">
+                <p>
+                    Find trusted hand-selected wedding venues for your big day.
+                </p>
+                <a href="#">
+                View All
+            </a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/veneu_img_one.png" alt="">
+                            <span>Lorem ipsum dolor sit amet consectetur</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="venu-div">
+                        <a href="#">
+                            <img src="./assets/images/venu-add.svg" alt="">
+                            <span>Add Your Own</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Assets/js/jquery.min.js"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/fonts/js/all.min.js"></script>
+    <script src="Assets/fonts/js/fontawesome.min.js"></script>
+    <script>
+        $('#example2').calendar({
+            type: 'date'
+        });
+        $('#example3').calendar({
+            type: 'date'
+        });
+    </script>
+</body>
+
+</html>

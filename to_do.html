@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is pyar</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link
+        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/to_do.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="hero-section">
+        <nav class="navbar navbar-expand-lg navbar-light header">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/nav logo.png" class="nav-logo" alt="Logo">
+                </a>
+                <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse fun-navbar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active-nav">
+                            <a class="nav-link" href="">Dashboard Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Wedding Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Venues</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Help</a>
+                        </li>
+                        <div class="dropdown mobile-view">
+                            <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/images/user-image.png" alt="user-image">
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                        My Profile
+                                    </a></li>
+                                <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                        Log Out
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </ul>
+
+                </div>
+                <div class="dropdown desktop-view">
+                    <a href="#" class="user-icon desktop-view" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/images/user-image.png" alt="user-image">
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                My Profile
+                            </a></li>
+                        <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                Log Out
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- ======Navebar section close======   -->
+    </header>
+    <section class="todo-first-section">
+        <div class="container">
+            <div class="progres-div">
+                <p>
+                    You have completed 0 out of 80 tasks.
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-todo-section">
+        <div class="container">
+            <h2 class="todo-head">
+                To-Do List
+            </h2>
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="your-search-div">
+                        <h3>
+                            YOUR SEARCH
+                        </h3>
+                        <button type="button">
+                            To Do
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 class="status">
+                        Status
+                    </h4>
+                    <ul class="completed-list">
+                        <li class="completed">
+                            <span>
+                                Completed
+                            </span>
+                            <span>
+                                0
+                            </span>
+                        </li>
+                        <li class="incompleted">
+                            <span>
+                                Incomplete
+                            </span>
+                            <span>
+                                0
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="add-task-div">
+                        <a href="#" data-toggle="modal" data-target="#addTask">
+                            <img src="./assets/images/add-email.svg" alt="">
+                            <span>
+                                Add a new task
+
+                            </span>
+
+                        </a>
+                        <div class="modal fade" id="addTask" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal_center">
+                                <div class="modal-dialog add-modal opacity-animate3">
+                                    <div class="modal-content">
+                                        <div class="modal-body padd">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <div class="modal_content">
+                                                <div class="modal-inner-div">
+                                                    <h2>
+                                                        Add New Task
+                                                    </h2>
+                                                    <div class="radio-main-div">
+                                                        <div class="radio">
+                                                            <input id="Photo-graphy" name="radio" type="radio" checked>
+                                                            <label for="Photo-graphy"
+                                                                class="radio-label">Budgetary</label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                            <input id="Catering-id" name="radio" type="radio">
+                                                            <label for="Catering-id"
+                                                                class="radio-label">Non-Budgetary</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inputs-main-div">
+                                                        <input type="text" class="task_add" placeholder="Task Title">
+                                                        <textarea class="task_add" name="" id="" rows="4"
+                                                            placeholder="Description"></textarea>
+                                                        <select name="add_Event" id="add_Event" class="add-event">
+                                                            <option value="nikah">Add Category</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                        </select>
+                                                        <select name="add_Event" id="add_Event" class="add-event">
+                                                            <option value="nikah">Add Event</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                        </select>
+                                                        <div class="ui calendar" id="example2">
+                                                            <div class="ui input left icon">
+
+                                                                <input type="text" placeholder="Due Date">
+                                                                <i class="calendar icon"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="task_add" placeholder="Add Budget">
+                                                        <div class="text-center">
+                                                            <button class="add-btn">Add Task</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal fade" id="addTaskTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal_center">
+                                <div class="modal-dialog add-modal opacity-animate3">
+                                    <div class="modal-content">
+                                        <div class="modal-body padd">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <div class="modal_content">
+                                                <div class="modal-inner-div">
+                                                    <h2>
+                                                        Add New Task
+                                                    </h2>
+                                                    <div class="radio-main-div">
+                                                        <div class="radio">
+                                                            <input id="Photo-graphy" name="radio" type="radio" checked>
+                                                            <label for="Photo-graphy"
+                                                                class="radio-label">Budgetary</label>
+                                                        </div>
+
+                                                        <div class="radio">
+                                                            <input id="Catering-id" name="radio_2" type="radio">
+                                                            <label for="Catering-id"
+                                                                class="radio-label">Non-Budgetary</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inputs-main-div">
+                                                        <input type="text" class="task_add" placeholder="Task Title">
+                                                        <textarea class="task_add" name="" id="" rows="4" placeholder="Description"></textarea>
+                                                        <select name="add_Event" id="add_Event" class="add-event">
+                                                            <option value="nikah">Add Category</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                        </select>
+                                                        <select name="add_Event" id="add_Event" class="add-event">
+                                                            <option value="nikah">Add Event</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                            <option value="nikah">Nikkah</option>
+                                                        </select>
+                                                        <div class="ui calendar" id="example2">
+                                                            <div class="ui input left icon">
+                                                                
+                                                                <input type="text" placeholder="Due Date">
+                                                                <i class="calendar icon"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <button class="add-btn">Add Task</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="over-due-task-div">
+                        <h2>
+                            Overdue
+                        </h2>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="over-due-task-div">
+                        <h2>
+                            July ‘21
+                        </h2>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/completed_task.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/completed_task.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="over-due-task-div">
+                        <h2>
+                            Aug ‘21
+                        </h2>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="over-due-task-div">
+                        <h2>
+                            Aug ‘21
+                        </h2>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="over-due-task-div">
+                        <h2>
+                            Sept ‘21
+                        </h2>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="over-due-main-div">
+                            <div class="over-deu-left-div">
+                                <div class="over-deu-left-div-child-one">
+                                    <img src="./assets/images/check_one.png" alt="">
+                                </div>
+                                <div class="over-deu-left-div-child-two">
+                                    <h2>
+                                        Arrange catering for Engagement Party
+                                    </h2>
+                                    <p>
+                                        September 14
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="over-deu-right-div">
+                                <div class="over-deu-right-div-child-one">
+                                    <a href="#" data-toggle="modal" data-target="#editTask">
+                                        <img src="./assets/images/edit_task.png" alt="">
+                                    </a>
+                                    <div class="modal fade" id="editTask" tabindex="-1" role="dialog"
+                                        aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal_center">
+                                            <div class="modal-dialog add-modal opacity-animate3">
+                                                <div class="modal-content">
+                                                    <div class="modal-body padd">
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                        <div class="modal_content">
+                                                            <div class="modal-inner-div">
+                                                                <h2>
+                                                                    EDIT TASk
+                                                                </h2>
+                                                                <div class="radio-main-div">
+                                                                    <div class="radio">
+                                                                        <input id="Photo-graphy" name="radio"
+                                                                            type="radio" checked>
+                                                                        <label for="Photo-graphy"
+                                                                            class="radio-label">Budgetary</label>
+                                                                    </div>
+
+                                                                    <div class="radio">
+                                                                        <input id="Catering-id" name="radio"
+                                                                            type="radio">
+                                                                        <label for="Catering-id"
+                                                                            class="radio-label">Non-Budgetary</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inputs-main-div">
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Task Title">
+                                                                    <textarea class="task_add" name="" id="" rows="4"
+                                                                        placeholder="Description"></textarea>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Category</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <select name="add_Event" id="add_Event"
+                                                                        class="add-event">
+                                                                        <option value="nikah">Add Event</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                        <option value="nikah">Nikkah</option>
+                                                                    </select>
+                                                                    <div class="ui calendar" id="example2">
+                                                                        <div class="ui input left icon">
+
+                                                                            <input type="text" placeholder="Due Date">
+                                                                            <i class="calendar icon"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <input type="text" class="task_add"
+                                                                        placeholder="Add Budget">
+                                                                    <div class="text-center">
+                                                                        <button class="add-btn">Save</button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="over-deu-right-div-child-two">
+                                    <a href="#">
+                                        <img src="./assets/images/delete_task.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/fonts/js/all.min.js"></script>
+    <script src="Assets/fonts/js/fontawesome.min.js"></script>
+    <script>
+        $('input[name="radio"]').change(function () {
+            if ($(this).is(':checked') && $(this).val() == '0') {
+                $('#addTaskTwo').modal('show');
+            }
+        });
+    </script>
+</body>
+
+</html>
