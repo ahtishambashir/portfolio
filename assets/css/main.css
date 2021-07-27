@@ -97,7 +97,6 @@ video {
     vertical-align: baseline;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Source Serif Pro', serif;
-    font-family: 'W-Droge', sans-serif;
 }
 
 
@@ -173,7 +172,6 @@ a {
     font-size: 14px;
     margin: 0px 15px;
     border-bottom: 2px solid transparent;
-    font-family: 'W-Droge', sans-serif;
 }
 
 .nav-item.active-nav {
@@ -190,6 +188,7 @@ a {
 }
 
 .nav-link {
+    font-family: 'W-Droge', sans-serif;
     padding-right: 0px !important;
     padding-left: 0px !important;
     font-style: normal;

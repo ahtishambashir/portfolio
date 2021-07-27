@@ -142,6 +142,7 @@
 
 .camera-div img {
     width: 22px;
+    margin-top: 2px;
 }
 
 .camera-div {
@@ -160,7 +161,7 @@
 .count-down-div {
     position: absolute;
     bottom: 30px;
-    left: 172px;
+    left: 168px;
 }
 
 .count-down-div li {
@@ -336,8 +337,9 @@
     font-weight: 600;
     padding-bottom: 2px;
     color: #515151;
-    border-bottom: 4px solid #C4C4C4;
     margin-bottom: 20px;
+    border-bottom: 7px solid rgba(196, 196, 196, 0.3);
+    line-height: 13px;
 }
 
 .venue-main-div {
@@ -352,6 +354,7 @@
 }
 
 .venue-main-div a {
+    line-height: 12px;
     width: fit-content;
     color: #515151;
     font-size: 16px;
@@ -378,34 +381,25 @@
     font-size: 20px;
     color: #515151;
     font-weight: 600;
-    border-bottom: 2px solid #515151;
-    line-height: 25px;
+    border-bottom: 2px solid #c4c4c4;
+    line-height: 15px;
+    display: inline-block;
 }
 
 .wedding-section {
     padding-bottom: 50px;
 }
 
-.wed-head {
+.wed-head, .wed-head-2{
     font-family: 'Source Serif Pro', serif;
     width: fit-content;
     font-size: 35px;
     font-weight: 600;
     padding-bottom: 2px;
     color: #515151;
-    border-bottom: 4px solid #C4C4C4;
-    margin-bottom: 15px;
-}
-
-.wed-head-2 {
-    font-family: 'Source Serif Pro', serif;
-    width: fit-content;
-    font-size: 35px;
-    font-weight: 600;
-    padding-bottom: 2px;
-    color: #515151;
-    border-bottom: 4px solid #C4C4C4;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
+    border-bottom: 7px solid rgba(196, 196, 196, 0.3);
+    line-height: 13px;
 }
 
 .wed-inner-div {
@@ -451,6 +445,7 @@
 }
 
 .estimate-head, .estimate-head-2 {
+    line-height: 20px;
     width: fit-content;
     font-size: 30px;
     margin-bottom: 40px;
@@ -487,6 +482,8 @@
     font-size: 16px;
     font-weight: 600;
     border-bottom: 2px solid #515151;
+    line-height: 10px;
+    display: block;
 }
 
 .to-do-list {
