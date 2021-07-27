@@ -338,7 +338,7 @@
     padding-bottom: 2px;
     color: #515151;
     margin-bottom: 20px;
-    border-bottom: 7px solid rgba(196, 196, 196, 0.3);
+    border-bottom: 7px solid rgba(196, 196, 196, 0.5);
     line-height: 13px;
 }
 
@@ -398,7 +398,7 @@
     padding-bottom: 2px;
     color: #515151;
     margin-bottom: 15px !important;
-    border-bottom: 7px solid rgba(196, 196, 196, 0.3);
+    border-bottom: 7px solid rgba(196, 196, 196, 0.5);
     line-height: 13px;
 }
 
