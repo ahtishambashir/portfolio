@@ -35,6 +35,7 @@
 }
 
 .your-search-div button {
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 5px 15px;
     font-size: 14px;
     background: #FFFFFF;
@@ -46,20 +47,20 @@
 .completed::before {
     content: "\2022";
     position: relative;
-    top: 6px;
+    top: 10px;
     left: 0%;
     color: #185641;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 10px;
 }
 
 .incompleted::before {
     content: "\2022";
     position: relative;
-    top: 6px;
+    top: 10px;
     left: 0%;
     color: #F1BAB9;
-    font-size: 40px;
+    font-size: 60px;
     line-height: 10px;
 }
 
@@ -70,12 +71,19 @@
     color: #515151;
     padding: 5px;
 }
+.overline {
+    text-decoration: line-through;
+}
 
 .completed-list li span:first-child {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-left: 10px;
+    width: 125px;
+    display: inline-block;
 }
 
 .completed-list li span:last-child {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-left: 30px;
 }
 
@@ -112,6 +120,13 @@
 .add-task-div a:hover {
     color: #515151;
 }
+@media (min-width: 576px) {
+    .modal-width {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+}
+
 
 .padd {
     padding: 1rem 0px;
@@ -126,12 +141,21 @@
 }
 
 .modal-inner-div h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Serif Pro', serif;
     font-weight: bold;
-    font-size: 30px;
-    margin: 0px 0px 20px 0px;
+    font-size: 28px;
+    margin: 0px 0px 15px 0px;
     text-align: center;
-    text-transform: uppercase;
+    color: 
+    #515151;
+}
+
+.modal-inner-div p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .radio-main-div {
@@ -218,6 +242,7 @@
 }
 
 .add-event {
+    line-height: 20px;
     margin-bottom: 20px;
     -webkit-appearance: none;
     -moz-appearance: none;

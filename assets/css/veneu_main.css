@@ -81,6 +81,7 @@
 }
 
 .Aesthetic {
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -320,7 +321,7 @@
 }
 
 .fa-heart {
-    color: #D7443E;
+    color: rgba(14, 3, 47, 0.5);
     cursor: pointer;
 }
 
@@ -361,6 +362,8 @@
 }
 
 .rate:not(:checked)>label {
+    
+    margin: 0px 3px;
     float: right;
     width: 1em;
     overflow: hidden;
@@ -371,7 +374,8 @@
 }
 
 .rate:not(:checked)>label:before {
-    content: '★ ';
+    content: '\f005';
+    font-family: fontawesome;
 }
 
 .rate>input:checked~label {
@@ -512,6 +516,7 @@
 }
 
 .form-group label {
+    font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     cursor: pointer;
 }
@@ -562,6 +567,13 @@
     background: #fff !important;
 }
 
+.modal_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .modal-title {
     color: #fff !important;
     font-size: 1.5rem !important;
@@ -592,13 +604,15 @@
     width: 100%;
     height: 100%;
     display: block !important;
-    margin-top: 120px;
 }
 
-.modal.show .modal-dialog {
-    border-radius: 24px;
-    width: 30%;
+@media (min-width: 576px) {
+    .modal.show .modal-dialog {
+        border-radius: 24px;
+        width: 400px;
+    }
 }
+
 
 .modal-body {
     height: 100%;
@@ -616,13 +630,14 @@
 }
 
 .hire_us_head {
-    font-family: Source Serif Pro;
+    font-family: "Source Serif Pro", serif;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 28px;
-    color: #515151;
+    color: rgb(81, 81, 81);
     margin-top: 14px;
+    text-align: left !important;
 }
 
 .image-add {

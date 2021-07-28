@@ -80,6 +80,7 @@
 }
 
 .Aesthetic {
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -160,8 +161,31 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
+.result {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #515151;
+    margin-bottom: 20px;
+}
 /* dropdown */
-  
+.ul-search-list.active::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #fff;
+  }
+   
+  .ul-search-list.active::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .ul-search-list.active::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    outline: 1px solid #fff;
+  }
+  .ul-search-list.active::-webkit-scrollbar-thumb {
+    background: #F3B95A; 
+    border-radius: 10px;
+  }
   .dropdown-ul-search ul{
     border-top: 1px solid rgba(0, 0, 0,.2);
     position: absolute;
@@ -335,7 +359,7 @@
 }
 
 .fa-heart {
-    color: #D7443E;
+    color: rgba(14, 3, 47, 0.5);
     cursor: pointer;
 }
 
@@ -376,6 +400,7 @@
 }
 
 .rate:not(:checked)>label {
+    margin: 0px 3px;
     float: right;
     width: 1em;
     overflow: hidden;
@@ -386,7 +411,8 @@
 }
 
 .rate:not(:checked)>label:before {
-    content: '★ ';
+    content: '\f005';
+    font-family: fontawesome;
 }
 
 .rate>input:checked~label {
@@ -521,7 +547,8 @@ text-decoration: none !important;
 .form-group {
     display: block;
     margin-bottom: 15px;
-    font-family: Source Sans Pro;
+        font-family: 'Source Sans Pro', sans-serif;
+
     font-weight: 600;
     font-size: 16px;
     color: #515151;
@@ -537,6 +564,7 @@ text-decoration: none !important;
 }
 
 .form-group label {
+    font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     cursor: pointer;
 }
@@ -553,16 +581,17 @@ text-decoration: none !important;
     vertical-align: middle;
     cursor: pointer;
     margin-right: 5px;
+    border-radius: 3px;
 }
 
 .form-group input:checked+label:after {
     content: '';
     display: block;
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 9px;
     width: 6px;
-    height: 14px;
+    height: 12px;
     border: solid #F3B95A;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
@@ -590,6 +619,12 @@ text-decoration: none !important;
 
 .modal-dialog {
     background: #fff !important;
+}
+.modal_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-title {
@@ -622,13 +657,14 @@ text-decoration: none !important;
     width: 100%;
     height: 100%;
     display: block !important;
-    margin-top: 190px;
+}
+@media (min-width: 576px) {
+    .modal.show .modal-dialog {
+        border-radius: 24px;
+        width: 400px;
+    }
 }
 
-.modal.show .modal-dialog {
-    border-radius: 24px;
-    width: 30%;
-}
 
 .modal-body {
     height: 100%;
@@ -646,16 +682,18 @@ text-decoration: none !important;
 }
 
 .hire_us_head {
-    font-family: Source Serif Pro;
+    font-family: 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 28px;
     color: #515151;
     margin-top: 14px;
+    text-align: left !important;
 }
 
 .image-add {
+    font-family: 'Source Serif Pro', serif;
     background-color: #185641;
     color: #fff;
     padding: 18px 25px;
