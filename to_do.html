@@ -127,6 +127,10 @@
                     </div>
                 </div>
                 <div class="col-md-9 position-reletive">
+                    <ul class="arrows-list">
+                        <li class="prev"><i class="fas fa-chevron-left"></i></li>
+                        <li class="next"><i class="fas fa-chevron-right"></i></li>
+                    </ul>
                     <div class="slider">
                         <div class="slide">
                             <h6>START!</h6>
@@ -1273,6 +1277,8 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 arrows: true,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next')
             });
         });
             $('#example2').calendar({

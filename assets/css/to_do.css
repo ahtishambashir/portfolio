@@ -49,6 +49,11 @@
     height: 20px;
     background-color: #185641;
 }
+.arrows-list {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+}
 .todo-head {
     font-size: 40px;
     font-weight: 600;
