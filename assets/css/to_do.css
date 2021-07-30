@@ -18,7 +18,37 @@
     border-radius: 1rem;
     background-color: #EEEEEE;
 }
-
+/* slider */
+.slick-track {
+    padding-top: 30px;
+}
+.slide {
+    height: 100px !important;
+    border-left: 1px solid #F3B95A;
+    border-right: 1px solid #F3B95A;
+    position: relative;
+    display: flex !important;
+    align-items: end;
+}
+.slide h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #515151;
+    position: absolute;
+    top: -13px;
+    left: -26px;
+    border-bottom: 1px solid #515151;
+    line-height: 11px;
+}
+.right-div {
+    height: 20px;
+    background-color: #F1BAB9;
+}
+.left-div {
+    height: 20px;
+    background-color: #185641;
+}
 .todo-head {
     font-size: 40px;
     font-weight: 600;
