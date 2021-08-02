@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Pyar</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link
+        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.3/css/fixedColumns.dataTables.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="assets/css/guest_list.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <nav class="navbar navbar-expand-lg navbar-light header">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/nav_logo.png" class="nav-logo" alt="Logo">
+                </a>
+                <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse fun-navbar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active-nav">
+                            <a class="nav-link" href="">Dashboard Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Wedding Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Venues</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Help</a>
+                        </li>
+                        <div class="dropdown mobile-view">
+                            <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/images/user-image.png" alt="user-image">
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                        My Profile
+                                    </a></li>
+                                <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                        Log Out
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </ul>
+
+                </div>
+                <div class="dropdown desktop-view">
+                    <a href="#" class="user-icon desktop-view" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/images/user-image.png" alt="user-image">
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                My Profile
+                            </a></li>
+                        <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                Log Out
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- ======Navebar section close======   -->
+    </header>
+    <section class="section-one">
+        <div class="container">
+            <h2 class="guest-head">
+                Guest List
+            </h2>
+            <div class="slider-main">
+                <ul class="arrows-list">
+                    <li class="prev"><img src="./assets/images/prev_btn.svg" alt=""></li>
+                    <li class="next"><img src="./assets/images/next_btn.svg" alt=""></li>
+                </ul>
+                <div class="slider">
+                    <div class="slide bg-1">
+                        <h6>Engagement</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/engagment.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-2">
+                        <h6>Bridal Shower</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/bride.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-3">
+                        <h6>Mehndi</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/mehndi.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-4">
+                        <h6>Nikkah</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/nikkah.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-1">
+                        <h6>Engagement</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/engagment.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-2">
+                        <h6>Bridal Shower</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/bride.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-3">
+                        <h6>Mehndi</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/mehndi.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide bg-4">
+                        <h6>Nikkah</h6>
+                        <div class="slider-inner">
+                            <div class="right-div">
+                                <img src="./assets/images/nikkah.svg" alt="">
+                                <h3>
+                                    0
+                                    <span>
+                                        Guests
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="left-div">
+                                <h3>
+                                    0
+                                    <span>
+                                        Attending
+                                    </span>
+                                </h3>
+                                <h3>
+                                    0
+                                    <span>
+                                        Declined
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="table-section">
+        <div class="container">
+            <div class="">
+                <table id="example" class="stripe row-border order-column" style="width:100%">
+                    <thead>
+                        <div class="table-header-main">
+                            <button>
+                                <img src="./assets/images/add_guest_icon.svg" alt="icon">
+                                <span>Guest</span>
+                            </button>
+                        </div>
+                        <div class="check-box-div">
+                            <div class="check-box">
+                                <input type="checkbox" id="html" class="">
+                                <label for="html">Select All</label>
+                            </div>
+                            <div class="btn-div">
+                                <button class="expoert-btn">Export List</button>
+                                <button class="delete-btn">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                        <h2 class="guest-two">
+                            Guest
+                        </h2>
+                        <tr>
+                            <th>Name</th>
+                            <th>Party
+                                Size</th>
+                            <th>E-mail</th>
+                            <th>Address</th>
+                            <th>Phone No</th>
+                            <th>Engagement</th>
+                            <th>Bridal Shower</th>
+                            <th>Mehndi</th>
+                            <th>Nikkah</th>
+                            <th>Mehndi</th>
+                            <th>Nikkah</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="detail-main">
+                                    <div class="check-box">
+                                        <input type="checkbox" id="html" class="">
+                                        <label for="html"></label>
+                                    </div>
+                                    <div class="user-detail">
+                                        <img src="./assets/images/user_ttable.svg" alt="">
+                                        <h2>
+                                            Nawal Chaudry
+                                        </h2>
+                                    </div>
+                                </div>
+                                
+                            </td>
+                            <td>0</td>
+                            <td>nw@gmail.com</td>
+                            <td>abc, newyork</td>
+                            <td>0301-1234567</td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table-check.svg" alt=""></td>
+                            <td><img src="./assets/images/table-close.svg" alt=""></td>
+                            <td><img src="./assets/images/table_dots.svg" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/3.3.3/js/dataTables.fixedColumns.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/fonts/js/all.min.js"></script>
+    <script src="assets/fonts/js/fontawesome.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+        $(document).ready(function () {
+            var table = $('#example').DataTable({
+                scrollY: "390px",
+                scrollX: true,
+                scrollCollapse: true,
+                sorting: false,
+                paging: false,
+                fixedColumns: {
+                    leftColumns: 5
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

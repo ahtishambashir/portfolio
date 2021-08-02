@@ -50,9 +50,24 @@
     background-color: #185641;
 }
 .arrows-list {
+    display: inline-block;
+}
+.arrows-list li {
+    font-size: 45px;
+    color: #515151;
+}
+.prev, .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translate(-50%);
+    z-index: 9;
+}
+.prev {
+    left: -35px;
+}
+.next {
+    right: -70px;
 }
 .todo-head {
     font-size: 40px;
@@ -402,6 +417,69 @@
     width: 20px;
 }
 /* responsiveness */
+@media (max-width: 1199px) {
+    .arrows-list li img {
+        width: 20px;
+    }
+    .prev, .next {
+        top: -30%;
+    }
+    .prev {
+        left: 30px;
+    }
+    .next {
+        left: 75px;
+        right: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .todo-head {
+        margin-top: 20px;
+    }
+    .prev {
+        left: 60px;
+    }
+    .next {
+        left: 100px;
+        right: auto;
+    }
+    .completed-list li {
+        font-size: 14px;
+    }
+    .completed::before {
+        top: 8px;
+        font-size: 45px;
+    }
+    .completed-list li span:first-child {
+        margin-left: 12px;
+        width: 85px;
+    }
+    .incompleted::before {
+        top: 8px;
+        font-size: 45px;
+    }
+    .completed-list li span:last-child {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .arrows-list {
+        display: none;
+    }
+    .progres-div {
+        width: 100%;
+    }
+    .progres-div p {
+        text-align: center;
+    }
+    .main-todo-section {
+        margin-top: 20px;
+    }
+    .slide h6 {
+        left: 2px;
+    }
+}
 
 @media(max-width: 576px) {
     .progres-div {

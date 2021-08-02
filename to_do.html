@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-lg navbar-light header">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/images/nav logo.png" class="nav-logo" alt="Logo">
+                    <img src="./assets/images/nav_logo.png" class="nav-logo" alt="Logo">
                 </a>
                 <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,8 +128,8 @@
                 </div>
                 <div class="col-md-9 position-reletive">
                     <ul class="arrows-list">
-                        <li class="prev"><i class="fas fa-chevron-left"></i></li>
-                        <li class="next"><i class="fas fa-chevron-right"></i></li>
+                        <li class="prev"><img src="./assets/images/prev_btn.svg" alt=""></li>
+                        <li class="next"><img src="./assets/images/next_btn.svg" alt=""></li>
                     </ul>
                     <div class="slider">
                         <div class="slide">
@@ -1278,15 +1278,25 @@
                 slidesToScroll: 1,
                 arrows: true,
                 prevArrow: $('.prev'),
-                nextArrow: $('.next')
+                nextArrow: $('.next'),
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: false, /* set centerMode to false to show complete slide instead of 3 */
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
-            $('#example2').calendar({
-                type: 'date'
-            });
-            $('#example3').calendar({
-                type: 'date'
-            });
+        $('#example2').calendar({
+            type: 'date'
+        });
+        $('#example3').calendar({
+            type: 'date'
+        });
     </script>
 </body>
 
