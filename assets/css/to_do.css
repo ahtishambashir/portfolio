@@ -28,7 +28,7 @@
     border-right: 1px solid #F3B95A;
     position: relative;
     display: flex !important;
-    align-items: end;
+    align-items: flex-end;
 }
 .slide h6 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -114,7 +114,7 @@
     line-height: 10px;
 }
 
-.completed-list li {
+.completed-list li a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-size: 20px;
@@ -125,7 +125,7 @@
     text-decoration: line-through;
 }
 
-.completed-list li span:first-child {
+.completed-list li a span:first-child {
     font-family: 'Source Sans Pro', sans-serif;
     margin-left: 10px;
     width: 125px;
@@ -444,14 +444,14 @@
         left: 100px;
         right: auto;
     }
-    .completed-list li {
+    .completed-list li a {
         font-size: 14px;
     }
     .completed::before {
         top: 8px;
         font-size: 45px;
     }
-    .completed-list li span:first-child {
+    .completed-list li a span:first-child {
         margin-left: 12px;
         width: 85px;
     }
@@ -459,7 +459,7 @@
         top: 8px;
         font-size: 45px;
     }
-    .completed-list li span:last-child {
+    .completed-list li a span:last-child {
         margin-left: 10px;
     }
 }
