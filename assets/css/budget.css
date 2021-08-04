@@ -77,6 +77,14 @@ table {
     width: 200px;
     /* box-sizing: border-box; */
 }
+.displayline h3 {
+    /* margin-bottom: 20px; */
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #515151;
+    text-transform: uppercase;
+}
 
 table th {
     font-family: 'Source Sans Pro', sans-serif;
