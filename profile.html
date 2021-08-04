@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+        <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
+        <link rel="stylesheet" href="assets/css/profile.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Profile</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+      </head>
+<body>
+  
+<section class="my-profile">
+<!-- ======Navebar section======    -->
+<header class="hero-section">
+  <nav class="navbar navbar-expand-lg navbar-light header">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/images/nav_logo.png" class="nav-logo" alt="Logo">
+          </a>
+          <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                  <!-- <i class="fas fa-bars"></i> -->
+              </span>
+          </button>
+          <div class="collapse navbar-collapse fun-navbar" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item active-nav">
+                      <a class="nav-link" href="">Dashboard Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">Wedding Website</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./venue_main.html">Venues</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="./vender_main.html">Vendors</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./chat.html">Help</a>
+                  </li>
+                  <div class="dropdown mobile-view">
+                      <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <img src="./assets/images/user-image.png" alt="user-image">
+
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                                  My Profile
+                              </a></li>
+                          <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                                  Log Out
+                              </a></li>
+                      </ul>
+                  </div>
+              </ul>
+
+          </div>
+          <div class="dropdown desktop-view">
+              <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <img src="./assets/images/user-image.png" alt="user-image">
+
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a href="#"><span><img src="./assets/images/profile_user.png" alt=""></span>
+                          My Profile
+                      </a></li>
+                  <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                          Log Out
+                      </a></li>
+              </ul>
+          </div>
+
+      </div>
+  </nav>
+  <!-- ======Navebar section close======   -->
+</header>
+  <!-- ======Navebar section close======   -->
+    <div class="s-layout">
+        <!-- Sidebar -->
+        <div class="side-bar">
+        <div class="s-layout__sidebar">
+          <nav class="s-sidebar__nav">
+             <ul>
+                <li>
+                   <a class="s-sidebar__nav-link" href="profile.html">
+                      <em>Personal Information</em>
+                   </a>
+                </li>
+                <li>
+                    <a href="profile_data.html"><h4 class="survey-profile">Edit Survey Questions</h4></a>
+                </li>
+             </ul>
+          </nav>
+        </div>
+        </div>
+        <div class="container">
+          <!-- (((Accordian)))-->
+          <div id="accordion" class="myaccordion">
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Personal Information
+                    <span class="fa-stack fa-2x">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                    <a href="profile_data.html" class="accordian-click">
+                      <li class="accordian-click">Edit Survey Questions</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- (((Accordian close)))-->
+        <!-- Content -->
+        <main class="s-layout__content">
+            
+            <div class="container">
+              <div class="my-info">
+                Personal Information
+            </div>
+              <div class="row">
+                <div class="order col-sm-7">
+            <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="input-hiding">Enter Username</label>
+                  <input type="text" class="velue-input form-control" id="formGroupExampleInput" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" class="input-hiding">Update Your Password</label>
+                  <input type="text" class="velue-input form-control" id="formGroupExampleInput2" placeholder="Current Password">
+                  <input type="text" class="velue-input form-control mt-3" id="formGroupExampleInput2" placeholder="New Password">
+                  <input type="text" class="velue-input form-control mt-3" id="formGroupExampleInput2" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput" class="input-hiding">Update Your E-mail</label>
+                    <input type="text" class="velue-input form-control" id="formGroupExampleInput" placeholder="Enter New E-mail">
+                  </div>
+                  <button class="save-form">Save</button>
+              </form>
+            </div>
+            <div class="col-sm-5">
+                
+                <!-- (((input image))) -->
+                <div class="img-controle">
+                    <div class="view-profile">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url(./assets/images/my_profile.png);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- (((input image close))) -->
+                </div>
+            </div>
+            </div>
+            </div>  
+        </main>
+        </div>
+</section>
+
+
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/0206006232.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/fonts/js/all.min.js"></script>
+  <script src="assets/fonts/js/fontawesome.min.js"></script>
+
+
+
+  <!-- (((input image))) -->
+<script>
+   function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+</script>
+  <!-- (((input image close))) -->
+</body>
+</html>
