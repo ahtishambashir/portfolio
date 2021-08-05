@@ -30,8 +30,7 @@
     font-weight: 600;
 }
 
-.venue-searech:focus,
-.venue-searech:active {
+.venue-searech:focus, .venue-searech:active {
     box-shadow: none;
     outline: none;
 }
@@ -59,7 +58,6 @@
     flex-wrap: unset !important;
 }
 
-
 /* Hero section close */
 
 .venue-result {
@@ -72,6 +70,9 @@
     position: relative;
 }
 
+.clickable {
+    cursor: pointer;
+}
 .venue-name {
     font-family: 'Source Serif Pro', serif;
     font-size: 20px;
@@ -133,7 +134,6 @@
     align-items: center;
 }
 
-
 /* .people-view{
   display: flex;
   justify-content: center;
@@ -172,7 +172,6 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
-
 
 /* (((radio btn))) */
 
@@ -230,9 +229,7 @@
     margin-right: 0;
 }
 
-
 /* (((Radio btn close))) */
-
 
 /* radio dropeDown */
 
@@ -249,8 +246,7 @@
     border-radius: 10px;
 }
 
-.myaccordion .card,
-.myaccordion .card:last-child .card-header {
+.myaccordion .card, .myaccordion .card:last-child .card-header {
     border: none;
 }
 
@@ -274,8 +270,7 @@
     color: #F3B95A;
 }
 
-.myaccordion .btn-link:hover,
-.myaccordion .btn-link:focus {
+.myaccordion .btn-link:hover, .myaccordion .btn-link:focus {
     text-decoration: none;
 }
 
@@ -301,9 +296,7 @@
     text-align: center;
 }
 
-
 /* radio DropeDown close */
-
 
 /* click fave hart  */
 
@@ -346,9 +339,7 @@
     margin-left: 0 !important;
 }
 
-
 /* click fave hart  */
-
 
 /* five star  */
 
@@ -362,7 +353,6 @@
 }
 
 .rate:not(:checked)>label {
-    
     margin: 0px 3px;
     float: right;
     width: 1em;
@@ -382,22 +372,15 @@
     color: #ffc700;
 }
 
-.rate:not(:checked)>label:hover,
-.rate:not(:checked)>label:hover~label {
+.rate:not(:checked)>label:hover, .rate:not(:checked)>label:hover~label {
     color: #deb217;
 }
 
-.rate>input:checked+label:hover,
-.rate>input:checked+label:hover~label,
-.rate>input:checked~label:hover,
-.rate>input:checked~label:hover~label,
-.rate>label:hover~input:checked~label {
+.rate>input:checked+label:hover, .rate>input:checked+label:hover~label, .rate>input:checked~label:hover, .rate>input:checked~label:hover~label, .rate>label:hover~input:checked~label {
     color: #c59b08;
 }
 
-
 /* five starc// */
-
 
 /* ===pagination=== */
 
@@ -432,7 +415,6 @@
     outline: none;
 }
 
-
 /* .pagination li a {
   border: 1px;
   margin-left: 0px;
@@ -454,8 +436,7 @@
     /*color:#707070;*/
 }
 
-.pagination li:first-child a,
-.pagination li:last-child a {
+.pagination li:first-child a, .pagination li:last-child a {
     border: 1px solid #185641 !important;
     border-radius: 4px;
     margin: 5px;
@@ -475,15 +456,13 @@
     text-decoration: none !important;
 }
 
-.pagination li:first-child a:hover,
-.pagination li:last-child a:hover {
+.pagination li:first-child a:hover, .pagination li:last-child a:hover {
     text-decoration: none !important;
     color: #fff;
     background-color: #185641;
 }
 
-.pagination li:first-child a:focus,
-.pagination li:last-child a:focus {
+.pagination li:first-child a:focus, .pagination li:last-child a:focus {
     outline: none;
 }
 
@@ -491,15 +470,13 @@
     border: 2px solid #185641;
 }
 
-
 /* ===pagination close=== */
-
 
 /* check box css start */
 
 .form-group {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -519,6 +496,8 @@
     font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .form-group label:before {
@@ -526,13 +505,16 @@
     -webkit-appearance: none;
     background-color: transparent;
     border: 2px solid #F3B95A;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+    padding: 8px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
     cursor: pointer;
     margin-right: 5px;
+    border-radius: 3px;
+    /* margin-bottom: 0px; */
+    margin-top: 1px;
 }
 
 .form-group input:checked+label:after {
@@ -540,17 +522,15 @@
     display: block;
     position: absolute;
     top: 2px;
-    left: 9px;
+    left: 7px;
     width: 6px;
     height: 14px;
     border: solid #F3B95A;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    transform: rotate( 45deg);
 }
 
-
 /* ======Modal))======= */
-
 
 /* modal css start */
 
@@ -613,7 +593,6 @@
     }
 }
 
-
 .modal-body {
     height: 100%;
     width: 100%;
@@ -644,18 +623,16 @@
     font-family: 'Source Serif Pro', serif;
     background-color: #185641;
     color: #fff;
-    padding: 18px 25px;
+    padding: 13px 25px;
     border-radius: 6px;
     font-size: 22px;
     border: none;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
     outline: none !important;
 }
 
-
 /* modal css end */
-
 
 /* modal-animation start */
 
@@ -703,7 +680,6 @@
     }
 }
 
-
 /* @media (max-width: 992px){
   .modal.show .modal-dialog{
       width:auto;
@@ -723,15 +699,11 @@
     }
 }
 
-
 /* modal animation end */
-
 
 /* ====(((modal close)))==== */
 
-
 /* check box css end */
-
 
 /* ====Madia Quree section====  */
 
