@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is pyar</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link
+        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
+        rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
     <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -136,7 +139,7 @@
                         Nikkah
                     </p>
                 </a>
-                <a href="#">
+                <a href="#" data-toggle="modal" data-target="#addEvent">
                     <div class="img-div bg-6">
                         <img src="./assets/images/add-icon.svg" alt="home-icon">
                     </div>
@@ -144,11 +147,49 @@
                         Add More Events
                     </p>
                 </a>
+                <div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal_center">
+                        <div class="modal-dialog add-modal opacity-animate3">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <div class="modal_content">
+                                        <div class="modal-inner-div">
+                                            <h2>
+                                                Add Event
+                                            </h2>
+                                            <select name="add_Event" id="add_Event" class="add-event">
+                                                <option value="nikah">Add new event</option>
+                                                <option value="nikah">Nikkah</option>
+                                                <option value="nikah">Nikkah</option>
+                                                <option value="nikah">Nikkah</option>
+                                            </select>
+                                            <div class="ui calendar" id="example2">
+                                                <div class="ui input left icon datepicker">
+
+                                                    <input type="text" placeholder="Add event date">
+                                                    <i class="calendar icon"></i>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="add-event-btn">
+                                                Add Event
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <div class="main-div">
-        <section class="welcome-section">
+        <section class="welcome-section bg-render">
+            <div class="wave bg-render"></div>
             <div class="container">
                 <div class="welcome-head">
                     <h2>Welcome back, Farah & Shahid!</h2>
@@ -183,7 +224,7 @@
 
             </div>
         </section>
-        <section class="venue-section">
+        <section class="venue-section margin-top">
             <div class="container">
                 <h2 class="venue-head">
                     Your Venue(s)
@@ -316,12 +357,12 @@
                                                 <div class="modal_content">
                                                     <div class="modal-inner-div">
                                                         <h2>
-                                                            Add Vender
+                                                            Add Vendor
                                                         </h2>
                                                         <input type="text" class="vender-input"
                                                             placeholder="Enter vendor name">
                                                         <h4>OR</h4>
-                                                        <button type="button" class="add-btn">Add Vender</button>
+                                                        <button type="button" class="add-btn">Add Vendor</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -362,7 +403,7 @@
                                 </h2>
                             </div>
                             <div class="right-div">
-                                <a href="#">
+                                <a href="./budget.html">
                                     Add Cost
                                 </a>
                             </div>
@@ -397,7 +438,7 @@
                                 </h2>
                             </div>
                             <div class="right-div">
-                                <a href="#">
+                                <a href="./to_do.html">
                                     View All
                                 </a>
                             </div>
@@ -429,7 +470,7 @@
                                 </h2>
                             </div>
                             <div class="right-div">
-                                <a href="#">
+                                <a href="./guest_list.html">
                                     Add Guest
                                 </a>
                             </div>
@@ -498,11 +539,21 @@
         </section>
     </div>
     <script src="assets/js/jquery.min.js"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
     <script src="assets/js/countdown.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/fonts/js/all.min.js"></script>
     <script src="assets/fonts/js/fontawesome.min.js"></script>
+    <script>
+        $('#example2').calendar({
+            type: 'date'
+        });
+        $('.datepicker').keypress(function (e) {
+            e.preventDefault();
+        })
+    </script>
 </body>
 
 </html>

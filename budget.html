@@ -108,7 +108,7 @@
                 <div class="col-md-4 pt-4">
                     <div class="budget-div bg-two">
                         <h2>
-                            Estimated Budget
+                            Final Cost
                         </h2>
                         <h6>
                             $XX,XXX.XX
@@ -118,7 +118,7 @@
                 <div class="col-md-4 pt-4">
                     <div class="budget-div bg-three">
                         <h2>
-                            Estimated Budget
+                            Cost Paid
                         </h2>
                         <h6>
                             $XX,XXX.XX
@@ -131,7 +131,7 @@
     </section>
     <section class="table-section">
         <div class="container">
-            <h2>Estimated Budget Per Category</h2>
+            <h2>Budget Per Category</h2>
             <div class="table-responsive-md">
                 <table class="fold-table table table-borderless">
                     <thead>
@@ -151,8 +151,8 @@
                             <td class="rowline" class="cur">$ 2,999</td>
                             <td class="rowline">$ 0</td>
                             <td class="rowline" class="per">$ 0</td>
-                            <td class="rowline text-center"><img class="dlt-image"
-                                    src="./assets/images/todo_delete.svg" alt="">
+                            <td class="rowline text-center"><img class="dlt-image" src="./assets/images/todo_delete.svg"
+                                    alt="">
                             </td>
                             <td colspan="5" style="display: none;" class="displayline text-center">
                                 <h3>
@@ -168,7 +168,7 @@
                                             <tr class="main-head-second">
                                                 <th class="width-one"></th>
                                                 <th class="width-two">Category</th>
-                                                <th class="width-two">Estimated Cost</th>
+                                                <th class="width-two">Est. Cost</th>
                                                 <th class="width-two">Final Cost</th>
                                                 <th class="width-one">Cost Paid</th>
                                                 <th class="width-one"></th>
@@ -181,9 +181,13 @@
                                                 <td class="cur">$ 2,999</td>
                                                 <td>$ 0</td>
                                                 <td class="per">$ 0</td>
-                                                <td class="text-center"><img class="mr-2 dlt-image"
-                                                        src="./assets/images/todo_edit_task.svg" alt=""><img
-                                                        class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
+                                                <td class="text-center">
+                                                    <a href="" data-toggle="modal" data-target="#editExpense">
+                                                        <img class="mr-2 dlt-image" src="./assets/images/todo_edit_task.svg"
+                                                        alt="">
+                                                    </a>
+                                                    
+                                                    <img class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -192,9 +196,13 @@
                                                 <td class="cur">$ 2,999</td>
                                                 <td>$ 0</td>
                                                 <td class="per">$ 0</td>
-                                                <td class="text-center"><img class="mr-2 dlt-image"
-                                                        src="./assets/images/todo_edit_task.svg" alt=""><img
-                                                        class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
+                                                <td class="text-center">
+                                                    <a href="" data-toggle="modal" data-target="#editExpense">
+                                                        <img class="mr-2 dlt-image" src="./assets/images/todo_edit_task.svg"
+                                                        alt="">
+                                                    </a>
+                                                    
+                                                    <img class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -203,9 +211,13 @@
                                                 <td class="cur">$ 2,999</td>
                                                 <td>$ 0</td>
                                                 <td class="per">$ 0</td>
-                                                <td class="text-center"><img class="mr-2 dlt-image"
-                                                        src="./assets/images/todo_edit_task.svg" alt=""><img
-                                                        class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
+                                                <td class="text-center">
+                                                    <a href="" data-toggle="modal" data-target="#editExpense">
+                                                        <img class="mr-2 dlt-image" src="./assets/images/todo_edit_task.svg"
+                                                        alt="">
+                                                    </a>
+                                                    
+                                                    <img class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -214,16 +226,20 @@
                                                 <td class="cur">$ 2,999</td>
                                                 <td>$ 0</td>
                                                 <td class="per">$ 0</td>
-                                                <td class="text-center"><img class="mr-2 dlt-image"
-                                                        src="./assets/images/todo_edit_task.svg" alt=""><img
-                                                        class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
+                                                <td class="text-center">
+                                                    <a href="" data-toggle="modal" data-target="#editExpense">
+                                                        <img class="mr-2 dlt-image" src="./assets/images/todo_edit_task.svg"
+                                                        alt="">
+                                                    </a>
+                                                    
+                                                    <img class="dlt-image" src="./assets/images/todo_delete.svg" alt="">
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td></td>
                                                 <td>
                                                     <div class="add-div">
-                                                        <a href="#" data-toggle="modal" data-target="#editExpense">
+                                                        <a href="#" data-toggle="modal" data-target="#addExpense">
                                                             <img src="./assets/images/todo_addtask.svg" alt="">
                                                             <span>Add New Expense</span>
                                                         </a>
@@ -1018,8 +1034,36 @@
 
         </div>
     </section>
-
-    <!-- expense modal -->
+    <!--add expense modal -->
+    <div class="modal fade" id="addExpense" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal_center">
+            <div class="modal-dialog add-modal opacity-animate3">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="modal_content">
+                            <div class="modal-inner-div">
+                                <h2>
+                                    Add Expense
+                                </h2>
+                                <input type="text" class="vender-input" placeholder="Expense Name">
+                                <input type="text" class="vender-input" placeholder="Est. Cost">
+                                <input type="text" class="vender-input" placeholder="Final Cost">
+                                <input type="text" class="vender-input" placeholder="Cost Paid">
+                                <div class="text-center">
+                                    <button type="button" class="add-btn">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--edit expense modal -->
     <div class="modal fade" id="editExpense" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal_center">
@@ -1063,7 +1107,12 @@
                                 <h2>
                                     Add Category
                                 </h2>
-                                <input type="text" class="vender-input" placeholder="Enter Category Name">
+                                <select name="add_Event" id="add_Event" class="add-event">
+                                    <option value="Enter Category Name">Enter Category Name</option>
+                                    <option value="nikah">Nikkah</option>
+                                    <option value="nikah">Nikkah</option>
+                                    <option value="nikah">Nikkah</option>
+                                </select>
                                 <div class="text-center">
                                     <button type="button" class="add-btn">Save</button>
                                 </div>

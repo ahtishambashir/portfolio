@@ -447,6 +447,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 @media(max-width: 480px) {
+    .tab-one, .tab-two, .tab-three, .tab-four, .tab-five {
+        height: auto;
+    }
     .list-wed {
         flex-direction: column;
     }

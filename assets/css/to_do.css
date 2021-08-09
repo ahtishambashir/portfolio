@@ -3,7 +3,7 @@
 }
 
 .progres-div {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -15,8 +15,21 @@
 }
 
 .progress {
+    height: 0.6rem;
     border-radius: 1rem;
     background-color: #EEEEEE;
+}
+.ui.calendar .ui.table tr .prev.link {
+    width: 14.28571429%;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.ui.calendar .ui.table tr .next.link {
+    width: 14.28571429%;
+    position: absolute;
+    right: -20px;
+    top: 10px;
 }
 /* slider */
 .slick-track {
@@ -36,10 +49,13 @@
     font-size: 16px;
     color: #515151;
     position: absolute;
-    top: -13px;
-    left: -26px;
+    top: -15px;
+    left: 0px;
     border-bottom: 1px solid #515151;
     line-height: 11px;
+}
+.arrows-list img {
+    width: 20px;
 }
 .right-div {
     height: 20px;
@@ -156,7 +172,7 @@
 
 .add-task-div a {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -165,6 +181,11 @@
 
 .add-task-div a img {
     margin-right: 10px;
+    width: 23px;
+}
+.add-task-div a span {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 3px;
 }
 
 .add-task-div a:hover {
@@ -179,7 +200,7 @@
 
 
 .padd {
-    padding: 1rem 0px;
+    padding: 0rem 0px;
 }
 
 .modal_center {
@@ -274,7 +295,7 @@
     border: 1px solid #515151;
     outline: none;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
     color: #515151;
     font-family: 'Source Sans Pro', sans-serif;
@@ -293,7 +314,7 @@
 
 .add-event {
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
@@ -407,14 +428,14 @@
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.over-deu-left-div-child-one img {
+/* .over-deu-left-div-child-one img {
     width: 25px;
-}
+} */
 .over-deu-right-div-child-one img {
-    width: 25px;
+    width: 20px;
 }
 .over-deu-right-div-child-two img {
-    width: 20px;
+    width: 18px;
 }
 /* responsiveness */
 @media (max-width: 1199px) {

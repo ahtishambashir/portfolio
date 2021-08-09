@@ -129,6 +129,9 @@
                                     </button>
                                     <div class="modal_content">
                                         <div class="modal-inner-div">
+                                            <h2>
+                                                Add Event
+                                            </h2>
                                             <select name="add_Event" id="add_Event" class="add-event">
                                                 <option value="nikah">Add new event</option>
                                                 <option value="nikah">Nikkah</option>
@@ -136,7 +139,7 @@
                                                 <option value="nikah">Nikkah</option>
                                             </select>
                                             <div class="ui calendar" id="example2">
-                                                <div class="ui input left icon">
+                                                <div class="ui input left icon datepicker">
 
                                                     <input type="text" placeholder="Add event date">
                                                     <i class="calendar icon"></i>
@@ -225,30 +228,6 @@
                                 <img src="./assets/images/venu-add.svg" alt="">
                                 <span>Add Your Own</span>
                             </a>
-                            <div class="modal fade" id="addVenue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                                aria-hidden="true">
-                                <div class="modal_center">
-                                    <div class="modal-dialog add-modal opacity-animate3">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                                    <i class="fas fa-times"></i>
-                                                </button>
-                                                <div class="modal_content">
-                                                    <div class="modal-inner-div">
-                                                        <h2>
-                                                            Add Venue
-                                                        </h2>
-                                                        <input type="text" class="vender-input"
-                                                            placeholder="EM Photography">
-                                                        <button type="button" class="add-btn">Add Venue</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,7 +248,7 @@
                         <div class="venu-div">
                             <a href="#">
                                 <img src="./assets/images/second_icon.png" alt="">
-                                <span>Browse Venues</span>
+                                <span>Browse Vendor`</span>
                             </a>
                         </div>
                     </div>
@@ -283,7 +262,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="venu-div">
-                            <a href="#" data-toggle="modal" data-target="#addVender">
+                            <a href="#" data-toggle="modal" data-target="#addVenue">
                                 <img src="./assets/images/venu-add.svg" alt="">
                                 <span>Add Your Own</span>
                             </a>
@@ -343,7 +322,7 @@
                                 </h2>
                             </div>
                             <div class="right-div">
-                                <a href="./budget.html">
+                                <a data-toggle="modal" data-target="#addVenue" href="./budget.html">
                                     Add Cost
                                 </a>
                             </div>
@@ -378,7 +357,7 @@
                                 </h2>
                             </div>
                             <div class="right-div">
-                                <a href="./to_do.html">
+                                <a data-toggle="modal" data-target="#addVenue" href="./to_do.html">
                                     Add To-Do
                                 </a>
                             </div>
@@ -389,7 +368,7 @@
                         <h2 class="guest">
                             0
                             <span>
-                                Task
+                                Task(s)
                             </span>
                         </h2>
     
@@ -402,7 +381,7 @@
                                 </h2>
                             </div>
                             <div class="right-div">
-                                <a href="./guest_list.html">
+                                <a data-toggle="modal" data-target="#addVenue" href="./guest_list.html">
                                     Add Guest
                                 </a>
                             </div>
@@ -413,7 +392,7 @@
                         <h2 class="guest">
                             0
                             <span>
-                                Guests
+                                Guest(s)
                             </span>
                         </h2>
                     </div>
@@ -427,13 +406,13 @@
                 </h2>
                 <div class="venue-main-div">
                     <p>
-                        Find trusted hand-selected wedding venues for your big day.
+                        Select the best team to bring your wedding to life. 
                     </p>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="venu-div">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#addVenue" href="#">
                                 <img src="./assets/images/venu-add.svg" alt="">
                                 <span>Add Your Own</span>
                             </a>
@@ -443,7 +422,67 @@
             </div>
         </section>
     </div>
+    <div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal_center">
+                        <div class="modal-dialog add-modal opacity-animate3">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <div class="modal_content">
+                                        <div class="modal-inner-div">
+                                            <h2>
+                                                Add Event
+                                            </h2>
+                                            <select name="add_Event" id="add_Event" class="add-event">
+                                                <option value="nikah">Add new event</option>
+                                                <option value="nikah">Nikkah</option>
+                                                <option value="nikah">Nikkah</option>
+                                                <option value="nikah">Nikkah</option>
+                                            </select>
+                                            <div class="ui calendar" id="example2">
+                                                <div class="ui input left icon datepicker">
 
+                                                    <input type="text" placeholder="Add event date">
+                                                    <i class="calendar icon"></i>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="add-event-btn">
+                                                Add Event
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="addVenue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                aria-hidden="true">
+                                <div class="modal_center">
+                                    <div class="modal-dialog add-modal opacity-animate3">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                                <div class="modal_content">
+                                                    <div class="modal-inner-div">
+                                                        <h3>
+                                                            Disclaimer!
+                                                        </h3>
+                                                        <p> No events are added. Please add atleast one event to continue. </p>
+                                                        <button type="button" class="add-btn">Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
     <script src="assets/js/jquery.min.js"></script>
     <script
         src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
@@ -456,6 +495,9 @@
         $('#example2').calendar({
             type: 'date'
         });
+        $('.datepicker').keypress(function (e) {
+            e.preventDefault();
+        })
     </script>
 </body>
 
