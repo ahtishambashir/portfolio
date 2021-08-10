@@ -1,5 +1,49 @@
+.cta-bar {
+    position: fixed;
+    z-index: 9999999;
+    font-weight: 700;
+    padding: 10px;
+    color: #fff;
+    background: #185641;
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
+.cta-bar p {
+    margin-bottom: 0 !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+}
+.cross-it {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    transition: .3s all ease-in-out;
+
+
+}
+.cross-it:hover {
+    color: #F3B95A;
+}
+.lev {
+    transition: .3s all ease-in-out;
+}
+.navbar-top {
+    top: 33px !important;
+}
+.navbar {
+    transition: all .3s ease-in-out;
+}
 .home-page {
-    background-image: url(../images/home_img.png);
+    background-image: url(../images/home_section_bg.svg);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -10,9 +54,9 @@
 .wedding-plan {
     background-color: #FBF6EE;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin-top: -55px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -70px;
 }
 
 .write-paragraph {
@@ -23,6 +67,7 @@
     line-height: 25px;
     text-align: justify;
     color: #515151;
+
 }
 
 .wedding-explain {
@@ -31,12 +76,13 @@
 }
 
 .desi-wedding {
-    font-family: W-Droge;
+    font-family: 'W-Droge', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 50px;
     line-height: 40px;
     color: #18573F;
+    padding-bottom: 20px;
 }
 
 .our-help {
@@ -47,7 +93,7 @@
     line-height: 35px;
     letter-spacing: 1px;
     color: #515151;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .sign-up {
@@ -89,7 +135,7 @@
 }
 
 .wedding-theme {
-    font-family: W-Droge;
+    font-family: 'W-Droge', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 26px;
@@ -265,7 +311,7 @@
 }
 
 .couple-box {
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 12px 64px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 25px;
     width: 300px;
     background: rgb(255, 255, 255);
     border-radius: 20px;
@@ -286,11 +332,11 @@
 /*-----Testimonial-------*/
 
 .carousel-control-next-icon {
-    background-image: url(../img/right.svg);
+    background-image: url(../images/img_right.png);
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/left.svg);
+    background-image: url(../images/img_left.png);
 }
 
 #testimonial4 .carousel-inner:hover {
@@ -366,7 +412,7 @@
 .testimonial .carousel-control-next-icon,
 .testimonial .carousel-control-prev-icon {
     width: 35px;
-    height: 35px;
+    height: 60px;
 }
 
 
@@ -431,7 +477,7 @@
 
 .fill-form {
     background: #FFFFFF;
-    box-shadow: 30px 50px 100px rgba(81, 81, 81, 0.2);
+    box-shadow: 0px 0px 20px rgb(81 81 81 / 20%);
     border-radius: 20px;
     text-align: center;
     padding: 35px 50px;
@@ -465,7 +511,7 @@
 }
 
 .importent-note {
-    padding-top: 30px;
+    padding: 30px 0px;
     background-color: rgb(251, 246, 238);
 }
 
@@ -494,7 +540,6 @@
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -561,8 +606,8 @@
     position: relative;
     background: #FBF6EE;
     height: 25vh;
-    border-bottom-left-radius: 50% 74%;
-    border-bottom-right-radius: 50% 74%;
+    border-bottom-left-radius: 50% 120%;
+    border-bottom-right-radius: 50% 120%;
 }
 
 .help-box {

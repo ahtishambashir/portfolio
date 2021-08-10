@@ -657,6 +657,9 @@
 }
 
 @media (max-width: 576px) {
+    .margin-top {
+        margin-top: 2pc;
+    }
     .modal_content {
         padding: 1em 0em;
     }
@@ -684,12 +687,19 @@
     .date-picker-div {
         width: 100%;
     }
+    .padding-mobile {
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 430px) {
     .count-down-div {
-        left: 70px;
+        left: 52px;
         bottom: 20px;
+    }
+    .camera-div {
+        top: 28px;
+        right: 45px;
     }
 }
 

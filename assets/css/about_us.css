@@ -62,7 +62,7 @@
 
 .no-stress {
     background: #FFFFFF;
-    box-shadow: 0px 25px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
     border-radius: 10px;
     text-align: center;
     padding: 28px 26px;
@@ -103,7 +103,7 @@
 
 .orgnized {
     background: #FFFFFF;
-    box-shadow: 0px 25px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
     border-radius: 10px;
     text-align: center;
     padding: 28px 26px;
@@ -127,11 +127,13 @@
     font-size: 30px;
     color: rgba(81, 81, 81, 0.5);
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .next {
     font-size: 30px;
     color: rgba(81, 81, 81, 0.5);
+    cursor: pointer;
 }
 
 .next:hover {
@@ -209,7 +211,7 @@
 
 .fill-form {
     background: #FFFFFF;
-    box-shadow: 30px 50px 100px rgba(81, 81, 81, 0.2);
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
     border-radius: 20px;
     text-align: center;
     padding: 35px 50px;
@@ -561,6 +563,7 @@
     }
     .dill-img {
         width: 50%;
+        display: none;
     }
     .stress-title {
         font-size: 20px;
