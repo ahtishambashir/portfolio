@@ -26,6 +26,12 @@
     margin-bottom: 10px;
     box-shadow: 0px 3.28455px 3.28455px rgba(0, 0, 0, 0.2);
 }
+.img-div svg {
+    width: 30px;
+}
+.img-div.active path {
+    fill: #fff;
+}
 
 .img-div img {
     width: 30px;
@@ -77,7 +83,12 @@
 .bg-render {
     background: #18573F;
 }
-
+.bg-render-bridal-shower {
+    background: #E3BB98;
+}
+.bg-render-bridal-shower .wave::after {
+    background: #E3BB98;
+}
 .wave {
     position: absolute;
     height: 250px;
@@ -155,7 +166,7 @@
     font-weight: normal;
     font-size: 20px;
     color: #FFFFFF;
-    border-bottom: 1px solid #fff;
+    text-decoration: underline !important;
 }
 
 .welcome-head a:hover {

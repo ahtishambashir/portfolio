@@ -89,7 +89,8 @@
                         <li><a href="./profile.html"><span><img src="./assets/images/profile_user.png" alt=""></span>
                                 My Profile
                             </a></li>
-                        <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
+                        <li><a href="#" data-toggle="modal" data-target="#forgetPassword"><span><img
+                                        src="./assets/images/logOut.png" alt=""></span>
                                 Log Out
                             </a></li>
                     </ul>
@@ -104,7 +105,16 @@
             <div class="main-icon-div">
                 <a href="./home_dashboard.html">
                     <div class="img-div bg-1 active">
-                        <img src="./assets/images/home.svg" alt="home-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"
+                            fill="none">
+                            <path
+                                d="M507.769 219.581L433.812 162.767C433.96 162.059 434.043 161.329 434.043 160.579V62.326C434.043 56.3481 429.198 51.5043 423.217 51.5043H355.869C349.889 51.5043 345.043 56.3481 345.043 62.326V94.572L262.598 31.2401C258.708 28.2533 253.295 28.2533 249.403 31.2401L4.2295 219.581C0.553044 222.405 -0.914941 227.254 0.576139 231.642C2.06866 236.03 6.19115 238.984 10.8275 238.984H77.9593V436.363C77.9593 462.045 98.8619 482.938 124.555 482.938H387.449C413.142 482.938 434.045 462.045 434.045 436.363V238.985H501.174C505.81 238.985 509.931 236.034 511.425 231.644C512.915 227.256 511.445 222.406 507.769 219.581ZM366.695 73.1492H412.392V146.312L366.695 111.206V73.1492ZM412.392 436.364C412.392 450.111 401.202 461.296 387.447 461.296H124.554C110.799 461.296 99.6096 450.111 99.6096 436.364V233.539L256.001 115.067L412.393 233.539V436.364H412.392ZM426.856 217.341L262.54 92.8651C258.672 89.9374 253.329 89.9374 249.461 92.8651L85.1448 217.341H42.68L256.001 53.4695L469.32 217.34H426.856V217.341Z"
+                                fill="white" />
+                            <path
+                                d="M213.543 242.723C186.914 242.723 163.376 262.094 156.302 289.833C152.569 304.476 151.806 327.812 169.378 355.837C185.27 381.177 212.653 404.57 250.768 425.364C252.296 426.196 253.983 426.615 255.672 426.615C257.36 426.615 259.046 426.196 260.573 425.364C298.699 404.572 326.091 381.179 341.988 355.839C359.569 327.813 358.808 304.479 355.076 289.836C348.002 262.096 324.458 242.723 297.82 242.723C281.79 242.723 267.205 249.665 255.676 262.55C244.149 249.665 229.57 242.723 213.543 242.723ZM335.235 294.894C338.66 308.329 342.789 355.378 255.673 404.663C168.582 355.379 172.718 308.329 176.143 294.894C180.828 276.527 196.556 263.198 213.543 263.198C226.522 263.198 238.372 270.964 246.915 285.068C248.768 288.131 252.09 290.003 255.67 290.003H255.672C259.252 290.003 262.572 288.134 264.427 285.071C272.976 270.964 284.833 263.198 297.819 263.198C314.817 263.198 330.552 276.53 335.235 294.894Z"
+                                fill="black" />
+                        </svg>
+                        <!-- <img src="./assets/images/home.svg" alt="home-icon"> -->
                     </div>
                     <p>
                         Home
@@ -440,6 +450,38 @@
                                 <p> No events are added. Please add atleast one event to continue. </p>
                                 <button type="button" class="add-btn">Continue</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="forgetPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal_center">
+            <div class="modal-dialog add-modal opacity-animate3">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="modal_content">
+                            <div class="logo-div">
+                                <img src="./assets/images/nav_logo.png" alt="logo">
+                            </div>
+                            <h2 class="hire_us_head">Forgot Password</h2>
+                            <p class="modal_descripition">
+                                Please enter the e-mail associated
+                                with your account.
+                            </p>
+                            <input class="login_input" type="email" placeholder="Enter E-mail">
+                            <button type="submit" class="input_login_btn">
+                                Log In
+                            </button>
+                            <h6 class="sgn_up_hed">
+                                Back to
+                                <a href="#" data-toggle="modal" data-target="#signUpModal">Log in</a>
+                            </h6>
                         </div>
                     </div>
                 </div>

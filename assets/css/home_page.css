@@ -9,6 +9,7 @@
     width: 100%;
     top: 0;
 }
+
 .cta-bar p {
     margin-bottom: 0 !important;
     font-family: 'Source Sans Pro', sans-serif;
@@ -18,30 +19,34 @@
     color: #FFFFFF;
     letter-spacing: 0.05em;
 }
+
 .cross-it {
     font-family: 'Source Sans Pro', sans-serif;
     position: absolute;
-    top: 5px;
+    top: 7px;
     right: 15px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     transition: .3s all ease-in-out;
-
-
 }
+
 .cross-it:hover {
     color: #F3B95A;
 }
+
 .lev {
     transition: .3s all ease-in-out;
 }
+
 .navbar-top {
     top: 33px !important;
 }
+
 .navbar {
     transition: all .3s ease-in-out;
 }
+
 .home-page {
     background-image: url(../images/home_section_bg.svg);
     width: 100%;
@@ -67,7 +72,6 @@
     line-height: 25px;
     text-align: justify;
     color: #515151;
-
 }
 
 .wedding-explain {
@@ -286,7 +290,6 @@
     width: 100%;
 }
 
-
 /* slider */
 
 .testimonial {
@@ -327,7 +330,6 @@
     text-align: center;
     color: #185641;
 }
-
 
 /*-----Testimonial-------*/
 
@@ -375,8 +377,7 @@
     left: auto;
 }
 
-.testimonial4_control_button .carousel-control.left:hover,
-.testimonial4_control_button .carousel-control.right:hover {
+.testimonial4_control_button .carousel-control.left:hover, .testimonial4_control_button .carousel-control.right:hover {
     color: #000;
     background: #fff;
     border: 2px solid #fff;
@@ -409,18 +410,14 @@
     padding-bottom: 50px;
 }
 
-.testimonial .carousel-control-next-icon,
-.testimonial .carousel-control-prev-icon {
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
     width: 35px;
     height: 60px;
 }
 
-
 /* ------testimonial  close-------*/
 
-
 /* slider close */
-
 
 /* ((((((())))))) */
 
@@ -430,7 +427,6 @@
     text-align: center;
     background-color: rgb(251, 246, 238);
 }
-
 
 /* =====(((Card)))===== */
 
@@ -465,7 +461,6 @@
     padding-bottom: 5px;
     color: #515151;
 }
-
 
 /* =====(((card close)))===== */
 
@@ -514,7 +509,6 @@
     padding: 30px 0px;
     background-color: rgb(251, 246, 238);
 }
-
 
 /* <!-- (((Accordion))) --> */
 
@@ -585,8 +579,7 @@
     border: 1px solid #F3B95A !important;
 }
 
-.panel-group .panel-heading+.panel-collapse>.list-group,
-.panel-group .panel-heading+.panel-collapse>.panel-body {
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     border: 1px solid #F3B95A;
 }
 
@@ -594,7 +587,6 @@
     margin-bottom: 12px !important;
     border-radius: 4px;
 }
-
 
 /* <!-- (((Accordion close))) --> */
 
@@ -791,7 +783,6 @@
     }
 }
 
-
 /* (((end))) */
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -914,12 +905,14 @@
         padding-top: 20px;
     }
     .our-help {
-        font-size: 9px;
+        font-size: 11px;
         line-height: 30px;
+        margin-bottom: 5px;
     }
     .desi-wedding {
-        font-size: 19px;
+        font-size: 25px;
         line-height: 20px;
+        padding-bottom: 0px;
     }
     .searching {
         font-size: 12px;
@@ -1066,7 +1059,15 @@
     }
 }
 
-@media(max-width:576px) {}
+@media(max-width:576px) {
+    .navbar-top {
+        top: 29px !important;
+    }
+    .cross-it {
+        top: 7px;
+        font-size: 15px;
+    }
+}
 
 @media(max-width:320px) {
     /* .heading-custom {
