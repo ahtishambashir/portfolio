@@ -1,0 +1,108 @@
+.wed-templates {
+    padding-bottom: 30px;
+}
+
+.web-title {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #185641;
+    margin-top: 6pc;
+}
+
+.wed-templates {
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #515151;
+}
+
+.wedding-card {
+    width: 100%;
+}
+
+.center-it {
+    justify-content: center;
+}
+
+.box-shadow {
+    filter: drop-shadow(0px 0px 3px rgba(81, 81, 81, 0.25));
+}
+
+.cardee {
+    position: relative;
+    transition: all .5s ease-in;
+}
+
+.c_image {
+    display: block;
+    width: 100%;
+    box-shadow: (0px 4px 10px rgba(81, 81, 81, 0.25));
+}
+
+.card__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: none;
+    transition: .5s ease;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Capture.jpg);
+    box-shadow: 0px 4px 10px rgba(81, 81, 81, 0.25);
+    border-radius: 10px;
+}
+
+.cardee:hover .card__overlay {
+    opacity: 1;
+}
+
+.overlay__text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hover-button {
+    background-color: #185641;
+    font-family: 'Source Serif Pro', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    padding: 0px 20px;
+    outline: none !important;
+}
+
+.hover-button:hover {
+    color: #FFFFFF;
+}
+
+@media (max-width:425px) {
+    .wed-templates {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .web-title {
+        font-size: 27px;
+        margin-top: 6pc;
+        margin-bottom: 10px;
+    }
+    .center-it {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'the artisan';
+    src: url('../css/Web-fonts/theartisan.woff2') format('woff2'), url('../css/Web-fonts/theartisan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Copyright Klim Type Foundry';
+    src: url('../css/Web-fonts/DomaineDisplay-Bold.woff2') format('woff2'), url('../css/Web-fonts/DomaineDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../css/Web-fonts/PlayfairDisplay-Regular.woff2') format('woff2'), url('../css/Web-fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../css/Web-fonts/Avenir-Light.woff2') format('woff2'), url('../css/Web-fonts/Avenir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    box-sizing: border-box;
+}
+
+.main-section {
+    width: 100%;
+    position: relative;
+}
+
+.bg-color {
+    background-color: #FFFEFA;
+}
+
+.right-image-div {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+}
+
+.right-image-div img {
+    width: 250px;
+}
+
+.left-image-div {
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+
+.left-image-div img {
+    width: 250px;
+}
+
+.bottom-image-div {
+    position: absolute;
+}
+
+.bottom-image-div img {
+    width: 100%;
+}
+
+.main-div {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 60px 80px;
+}
+
+.main-div h2 {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'the artisan';
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-link {
+    font-family: 'Copyright Klim Type Foundry';
+    font-size: 18px;
+    font-weight: 700;
+    color: #C4C4C4;
+    transition: all .3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+}
+
+.nav-link.active {
+    color: #000000;
+}
+
+.cover-img-div {
+    padding: 40px 0px 60px 0px;
+}
+
+.cover-img-div img {
+    width: 100%;
+}
+
+.main-div H3 {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 35px;
+    color: #000000;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-div p {
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: #565151;
+}
+
+.main-div h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #565151;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.list {
+    list-style: none;
+    position: relative;
+    min-height: 350px;
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.list::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #fff;
+}
+
+.list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    outline: 1px solid #fff;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #185641;
+    border-radius: 10px;
+}
+
+.list .tabs {
+    width: 100%;
+    height: 100%;
+    background: #FFf;
+    position: absolute;
+    transition: all 0.3s;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+.list .tabs:nth-child(odd) {
+    background: transparent;
+}
+
+.list .tabs.active {
+    transform: translateY(0px);
+    visibility: visible;
+    z-index: 2;
+}
+
+.animated {
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+
+/* slideinUp */
+
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+}
+
+.rsvp-first-div {
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.rsvp-first-div h6 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #185641;
+    margin: 0px 0px 20px;
+}
+
+.rsvp-first-div label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #515151;
+    margin-bottom: 10px;
+}
+
+.rsvp-first-div input {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #565151;
+    border: 1px solid rgba(10, 20, 47, 0.3);
+    border-radius: 5px;
+}
+
+.rsvp-btn-div {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.rsvp-btn-div button {
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    outline: none !important;
+    background-color: #185641;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0px;
+    font-weight: 500;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.powered-by {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.powered-by span {
+    color: #515151;
+}
+
+.powered-by span, .powered-by a {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.powered-by a {
+    color: #185641;
+    text-decoration: underline;
+}
+
+.powered-by a:hover {
+    color: #185641;
+}
+
+.party-main-div {
+    min-height: 175px;
+}
+
+.party-child-div {
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.party-child-div h4 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #515151;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.party-child-div button {
+    border-radius: 5px;
+    border: none;
+    outline: none !important;
+    background-color: #185641;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 50px;
+    font-weight: 500;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.member-div {
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.member-div h2 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #185641;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 0px;
+    margin-right: 70px;
+}
+
+.member-div img {
+    margin-right: 20px;
+}
+
+.member-div h4 {
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #515151;
+    padding: 0px 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 3px;
+}
+
+.rsvp_sent h3 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'the artisan';
+    padding-bottom: 20px;
+    text-align: center;
+    color: #F3B95A;
+}
+
+.rsvp_sent p {
+    font-size: 22px;
+    color: #515151;
+    font-weight: 400;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.registery-main-div h3 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Source Serif Pro', serif;
+    padding-bottom: 20px;
+}

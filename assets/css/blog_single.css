@@ -41,6 +41,10 @@
     margin-top: 40px;
 }
 
+.blog-banner-div {
+    padding: 0px 50px;
+}
+
 .image-function {
     width: 100%;
 }
@@ -76,13 +80,11 @@
     margin-top: 30px;
 }
 
-
 /* =====(((heat icon+ Modal)))===== */
 
 .modal-show {
     position: relative;
 }
-
 
 /* click fave hart  */
 
@@ -117,18 +119,13 @@
     margin-left: 0 !important;
 }
 
-
 /* click fave hart  */
-
 
 /* ======Modal))======= */
 
-
 /* check box css start */
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -186,9 +183,7 @@
     transform: rotate(45deg);
 }
 
-
 /* check box css end */
-
 
 /* modal css start */
 
@@ -278,9 +273,7 @@
     margin-top: 20px;
 }
 
-
 /* modal css end */
-
 
 /* modal-animation start */
 
@@ -335,22 +328,17 @@
     }
 }
 
-
 /* @media (max-width: 580px){
     .modal-content{
       margin-top: 60px;
     }
   } */
 
-
 /* modal animation end */
-
 
 /* ====(((modal close)))==== */
 
-
 /* =====(((heat icon+ Modal close)))===== */
-
 
 /* @media(max-width:777px) {
     .wedding-blog {

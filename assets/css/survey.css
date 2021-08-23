@@ -89,6 +89,11 @@
     border-bottom: 2px solid #F3B95A;
     outline: none;
     font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+.customer_records_dynamic .remove {
+    position: relative;
+    margin-bottom: .5rem;
 }
 
 input[type=date]:invalid::-webkit-datetime-edit {
@@ -294,6 +299,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.btn-remove-customer {
+    position: absolute;
+    top: 10px;
+    right: 5px;
 }
 
 .width {

@@ -47,6 +47,7 @@
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     background-image: url('../images/calendar-green.svg');
+    cursor: pointer;
 }
 
 .desktop-preview {
@@ -198,13 +199,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 2px solid #F3B95A;
 }
 
-/* .secedule-card-body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-} */
-
 .secedule-card-body h4 {
     font-weight: 600;
     font-size: 26px;
@@ -238,6 +232,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .secedule-card-body h3 span {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .registry-section {
     padding-bottom: 30px;
 }
@@ -247,20 +242,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 20px;
+    color: #515151;
 }
+
 .addition-email-div {
     position: relative;
-
 }
+
 .addition-email-div input {
     border-bottom: 2px solid #A8A8A8;
 }
+
 .addition-email-div img {
     width: 18px;
     position: absolute;
     right: 10px;
     bottom: 10px;
 }
+
 .save-survey-btn {
     font-family: 'Source Serif Pro', serif;
     width: 100%;
@@ -275,14 +274,172 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* modal css */
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 550px;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal_center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .edit-event-content {
     padding: 1em 1.5em;
     width: 100%;
 }
+
 .edit-event-content h2 {
     font-weight: bold;
     font-size: 30px;
     color: #515151;
     font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.edit-event-div {
+    margin-bottom: 10px;
+}
+
+.edit-event-div label {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 10px;
+    color: #515151;
+}
+
+.edit-event-div input, .edit-event-div textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(10, 20, 46, 0.3);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #515151;
+    outline: none;
+}
+
+.save-event-div {
+    text-align: center;
+}
+
+.save-event-div button {
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px 0px;
+    border: none;
+    outline: none !important;
+    background: #18573F;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Source Serif Pro', serif;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background-image: url('../images/clock-icon.svg');
+    cursor: pointer;
+}
+
+@media(max-width:992px) {
+    .small-screen {
+        display: none;
+    }
+    .wedding-servey-section {
+        margin-top: 4pc;
+    }
+    .margin-top {
+        margin-top: 3rem;
+    }
+    .wedding-main-div h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .wedding-main-div p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .survey-form-div h3 {
+        font-size: 22px;
+    }
+    .survey-form-div {
+        margin-bottom: 30px;
+    }
+    .wedding-servey-gallery h2 {
+        font-size: 22px;
+    }
+    .avatar-upload h3 {
+        font-size: 18px;
+    }
+    .schedule-section h2 {
+        font-size: 22px;
+    }
+    .secedule-card-body h4 {
+        font-size: 20px;
+    }
+    .secedule-card-body h3 {
+        font-size: 16px;
+    }
+    .registry-section h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .secedule-card-body h3 {
+        font-size: 12px;
+        align-items: center;
+    }
+    .wedding-main-div h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .survey-form-div h3 {
+        font-size: 18px;
+    }
+    .survey-form-div {
+        margin-bottom: 25px;
+    }
+    .wedding-main-div p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .wedding-servey-gallery h2 {
+        font-size: 16px;
+    }
+    .avatar-upload h3 {
+        font-size: 14px;
+    }
+    .avatar-upload p {
+        font-size: 14px;
+    }
+    .schedule-section h2 {
+        font-size: 18px;
+    }
+    .secedule-card-body h4 {
+        font-size: 16px;
+    }
+    .registry-section h3 {
+        font-size: 18px;
+    }
+    .secedule-card-body button img {
+        width: 16px;
+    }
+    .edit-event-content h2 {
+        font-size: 22px;
+    }
+    .edit-event-content {
+        padding: 1em 0em;
+    }
+    .save-event-div button {
+        width: 100%;
+    }
 }

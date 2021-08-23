@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <section class="tab-one">
+    <section class="tab-one" style="display: none;">
         <div class="survey-prnt-main">
             <div class="survey-left-div">
                 <div class="main-div">
@@ -84,7 +84,7 @@
         </div>
 
     </section>
-    <section class="tab-two">
+    <section class="tab-two" style="display: none;">
         <div class="survey-prnt-main">
             <div class="survey-left-div">
                 <div class="main-div">
@@ -136,7 +136,7 @@
         </div>
 
     </section>
-    <section class="tab-three">
+    <section class="tab-three" style="display: none;">
         <div class="survey-prnt-main">
             <div class="survey-left-div-check">
                 <div class="main-div">
@@ -437,43 +437,41 @@
                             <h3>
                                 Collabrator’s E-mail
                             </h3>
-                            <div class="width mb-3">
+                            <div class="width mb-2">
                                 <input type="text" class="name-input" placeholder="E-mail">
                             </div>
-                            <div class="width mb-3">
+                            <div class="width mb-2">
                                 <input type="text" class="name-input" placeholder="E-mail">
                             </div>
-                            <div class="width mb-3 position-relative">
-                                <input type="text" class="name-input" placeholder="Add Additional E-mail">
-                                <img src="./assets/images/add-email.svg" alt="" class="add-email-img">
+                            <div class="width mb-2 customer_records position-relative">
+                                <input class="name-input" name="customer_name" type="text" placeholder="Add Additional E-mail">
+
+                                <a class="extra-fields-customer" href="#"><img src="./assets/images/add-email.svg"
+                                        alt="" class="add-email-img"></a>
                             </div>
+                            <div class="customer_records_dynamic width"></div>
                         </form>
                     </div>
-
-                    <div class="check-btn-main mrgn">
-                        <div class="check-left-div">
-                            <a href="#">Skip</a>
-                        </div>
-                        <div class="check-right-div">
-                            <div class="next-btn-check-div">
-                                <button type="button">Next</button>
-                            </div>
+                </div>
+                <div class="check-btn-main mrgn">
+                    <div class="check-left-div">
+                        <a href="#">Skip</a>
+                    </div>
+                    <div class="check-right-div">
+                        <div class="next-btn-check-div">
+                            <button type="button">Next</button>
                         </div>
                     </div>
-
                 </div>
+
             </div>
             <div class="survey-right-div">
-                <!-- <div class="survey-side-div"> -->
-                <!-- <img class="survey-side-img" src="./assets/images/survey-one.svg" alt=""> -->
                 <img class="survey-side-img-two" src="./assets/images/survey-bg-four.jpg" alt="">
-                <!-- </div> -->
-
             </div>
         </div>
 
     </section>
-    <section class="tab-five">
+    <section class="tab-five" style="display: none;">
         <div class="survey-prnt-main">
             <div class="survey-left-div-end">
                 <div class="main-div">
@@ -545,6 +543,29 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/fonts/js/all.min.js"></script>
     <script src="assets/fonts/js/fontawesome.min.js"></script>
+    <script>
+        $('.extra-fields-customer').click(function () {
+            $('.customer_records').clone().appendTo('.customer_records_dynamic');
+            $('.customer_records_dynamic .customer_records').addClass('single remove position-relative');
+            $('.single .extra-fields-customer').remove();
+            $('.single').append('<a href="#" class="remove-field btn-remove-customer"><img src="./assets/images/minus-colab.svg" alt="icon"></a>');
+            $('.customer_records_dynamic > .single').attr("class", "remove");
+
+            $('.customer_records_dynamic input').each(function () {
+                var count = 0;
+                var fieldname = $(this).attr("name");
+                $(this).attr('name', fieldname + count);
+                $(this).attr('placeholder', 'E-mail');
+                count++;
+            });
+
+        });
+
+        $(document).on('click', '.remove-field', function (e) {
+            $(this).parent('.remove').remove();
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
