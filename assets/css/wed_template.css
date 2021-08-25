@@ -434,3 +434,68 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'Source Serif Pro', serif;
     padding-bottom: 20px;
 }
+
+.registery-main-div {
+    padding: 40px 20px;
+    min-height: 80vh;
+}
+
+.registery-main-div h4 {
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 30px;
+    font-family: 'Source Serif Pro', serif;
+    color: #515151;
+}
+
+.registry-link-div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.registry-link-div img {
+    width: 100%;
+}
+
+.schedule-main-div {
+    padding: 20px 0px;
+}
+
+.schedule-main-div h3 {
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    color: #204F17;
+    border-bottom: 2px solid #204F17;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.schedule-main-div p {
+    padding-top: 25px;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Source Serif Pro', serif;
+    text-align: left;
+}
+.schedule-main-div h4 {
+    line-height: 1;
+    color: #478232;
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 30px;
+}
+.image-fluid {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}

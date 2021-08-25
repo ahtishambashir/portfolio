@@ -176,12 +176,18 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="date-picker-div">
-                            <div class="ui calendar drop" id="example3">
-                                <div class="ui input left icon">
-
-                                    <input type="text" placeholder="Add event date">
-                                    <i class="calendar icon"></i>
+                            <div class="date-picker-left-div">
+                                <div class="ui calendar drop" id="example3">
+                                    <div class="ui input left icon">
+                                        <input type="text" placeholder="Add event date">
+                                        <i class="calendar icon"></i>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="date-picker-right-div">
+                                <button type="submit">
+                                    <img src="./assets/images/save-icon.svg" alt="save-icon">
+                                </button>
                             </div>
                         </div>
                         <div class="color-schem">
@@ -189,11 +195,23 @@
                                 Color Scheme
                             </h2>
                             <div class="select-clr">
-                                <img src="./assets/images/clr-one.png" alt="">
-                                <img src="./assets/images/clr-two.png" alt="">
-                                <img src="./assets/images/clr-three.png" alt="">
-                                <img src="./assets/images/clr-four.png" alt="">
-                                <img src="./assets/images/add-clr.png" alt="">
+                                <div class="color-input-div">
+                                    <input type="text" style="background: #55A687;" readonly class="color-input">
+                                </div>
+                                <div class="color-input-div">
+                                    <input type="text" style="background: #90C5B1;" readonly class="color-input">
+                                </div>
+                                <div class="color-input-div">
+                                    <input type="text" style="background: #E095B2;" readonly class="color-input">
+                                </div>
+                                <div class="color-input-div">
+                                    <input type="text" style="background: #FDC3D9;" readonly class="color-input">
+                                </div>
+                                <div class="color-input-div">
+                                    <a href="#" data-toggle="modal" data-target="#addColor">
+                                        <img src="./assets/images/add-input-image.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,7 +444,7 @@
                 </h2>
                 <div class="venue-main-div">
                     <p>
-                        Select the best team to bring your wedding to life. 
+                        Select the best team to bring your wedding to life.
                     </p>
                     <a href="#">
                         View All
@@ -531,7 +549,8 @@
     </div>
 
     <!-- add vendor modal -->
-    <div class="modal fade" id="addVender" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addVender" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal_center">
             <div class="modal-dialog add-modal opacity-animate3">
                 <div class="modal-content">
@@ -546,6 +565,48 @@
                                 </h2>
                                 <input type="text" class="vender-input" placeholder="Enter vendor name">
                                 <h4>OR</h4>
+                                <button type="button" class="add-btn">Add Vendor</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- color picker modal -->
+    <div class="modal fade" id="addColor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal_center">
+            <div class="modal-dialog add-modal opacity-animate3">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="modal_content">
+                            <div class="modal-inner-div">
+                                <h2>
+                                    Add Color Scheme
+                                </h2>
+                                <div class="color-picker-main-div">
+                                    <div class="color-picker-child-div">
+                                        <input type="color" style="background: #55A687;" class="color-picker-input">
+                                    </div>
+                                    <div class="color-picker-child-div">
+                                        <input type="color" style="background: #90C5B1;" class="color-picker-input">
+                                    </div>
+                                    <div class="color-picker-child-div">
+                                        <input type="color" style="background: #E095B2;" class="color-picker-input">
+                                    </div>
+                                    <div class="color-picker-child-div">
+                                        <input type="color" style="background: #FDC3D9;" class="color-picker-input">
+                                    </div>
+                                    <div class="color-picker-child-div">
+                                        <a href="#">
+                                            <img src="./assets/images/add-input-image.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                                 <button type="button" class="add-btn">Add Vendor</button>
                             </div>
                         </div>

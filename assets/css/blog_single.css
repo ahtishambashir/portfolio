@@ -47,6 +47,7 @@
 
 .image-function {
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .bloging-section {
@@ -59,10 +60,10 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.35;
     text-align: justify;
     color: #515151;
-    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .detail-titel {
@@ -70,14 +71,13 @@
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 40px;
     color: #515151;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .my-blog-img {
     width: 100%;
-    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 /* =====(((heat icon+ Modal)))===== */
@@ -94,14 +94,14 @@
 }
 
 .fa-heart {
-    color: #D7443E;
+    color: rgba(81, 81, 81, 0.5);
     cursor: pointer;
 }
 
 .click-heart {
     position: absolute;
     right: 15px;
-    top: 45px;
+    top: 15px;
     background: #ffff;
     font-size: 20px;
     text-align: center;
@@ -135,7 +135,7 @@
 
 .input-form {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -152,8 +152,11 @@
 }
 
 .input-form label {
+    font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .input-form label:before {
@@ -161,13 +164,15 @@
     -webkit-appearance: none;
     background-color: transparent;
     border: 2px solid #F3B95A;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+    padding: 8px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
     cursor: pointer;
     margin-right: 5px;
+    border-radius: 3px;
+    margin-top: 1px;
 }
 
 .input-form input:checked+label:after {
@@ -175,12 +180,12 @@
     display: block;
     position: absolute;
     top: 2px;
-    left: 9px;
+    left: 7px;
     width: 6px;
     height: 14px;
     border: solid #F3B95A;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    transform: rotate( 45deg);
 }
 
 /* check box css end */
@@ -198,6 +203,13 @@
 
 .modal-dialog {
     background: #fff !important;
+}
+.modal_center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-title {
@@ -253,24 +265,27 @@
 }
 
 .hire_us_head {
-    font-family: 'Source Serif Pro', serif;
+    font-family: "Source Serif Pro", serif;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 28px;
-    color: #515151;
+    color: rgb(81, 81, 81);
     margin-top: 14px;
+    text-align: left !important;
 }
 
 .image-add {
+    font-family: 'Source Serif Pro', serif;
     background-color: #185641;
     color: #fff;
-    padding: 18px 25px;
+    padding: 13px 25px;
     border-radius: 6px;
     font-size: 22px;
     border: none;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
+    outline: none !important;
 }
 
 /* modal css end */
