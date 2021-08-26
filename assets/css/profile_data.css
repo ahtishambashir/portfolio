@@ -18,6 +18,21 @@ a {
    margin-top: 8%;
    width: 92%;
 }
+.btn-remove-customer {
+   position: absolute;
+   top: 2px;
+   right: 5px;
+}
+.add-email-img {
+   position: absolute;
+   top: 2px;
+   right: 5px;
+   cursor: pointer;
+}
+.customer_records_dynamic .remove {
+   position: relative;
+   margin-bottom: 1rem;
+}
 
 /* Sidebar */
 
@@ -324,6 +339,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
    cursor: pointer;
    margin-right: 10px;
    margin-bottom: 2px;
+   border-radius: 3px;
 }
 
 .form-group-check input:checked+label:after {
