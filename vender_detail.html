@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- slider -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- slider close -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,13 +85,13 @@
                 <div class="col-lg-8">
                     <!-- ========Slider calisur======= -->
                     <div class="wrapper">
-                        <div class="carousel">
-                            <div><img src="./assets/images/vender_slider_img.png"></div>
-                            <div><img src="./assets/images/vender_slider_img.png"></div>
-                            <div><img src="./assets/images/vender_slider_img.png"></div>
-                            <div><img src="./assets/images/vender_slider_img.png"></div>
-                            <div><img src="./assets/images/vender_slider_img.png"></div>
-                            <div><img src="./assets/images/vender_slider_img.png"></div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="./assets/images/slider-img-one.png"></div>
+                            <div class="item"><img src="./assets/images/slider-img-one.png"></div>
+                            <div class="item"><img src="./assets/images/slider-img-one.png"></div>
+                            <div class="item"><img src="./assets/images/slider-img-one.png"></div>
+                            <div class="item"><img src="./assets/images/slider-img-one.png"></div>
+                            <div class="item"><img src="./assets/images/slider-img-one.png"></div>
                         </div>
                     </div>
                     <!-- ========Slider calisur close======= -->
@@ -251,7 +252,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/0206006232.js"></script>
     <!-- slider -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- slider close -->
     <script src="assets/js/main.js"></script>
     <script src="assets/fonts/js/all.min.js"></script>
@@ -261,12 +262,31 @@
 
     <script>
         // =====carisul-clider=====
-        $(document).ready(function() {
-            $('.carousel').slick({
-                slidesToShow: 2,
+        $(function () {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 2,
+                margin: 15,
                 dots: false,
-                centerMode: true,
-                autoplay: true
+                loop: true,
+                nav: false,
+                autoplay: true,
+                stagePadding: 30,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1170: {
+                        items: 2
+                    }
+                }
+
             });
         });
         // =====carisul-clider close=====
