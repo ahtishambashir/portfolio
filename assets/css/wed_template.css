@@ -30,7 +30,87 @@
     font-display: swap;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -58,7 +138,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .right-image-div img {
-    width: 250px;
+    width: 240px;
 }
 
 .left-image-div {
@@ -68,7 +148,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .left-image-div img {
-    width: 250px;
+    width: 240px;
 }
 
 .bottom-image-div {
@@ -246,6 +326,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     animation-name: slideInDown;
 }
 
+
 /* slideinUp */
 
 @-webkit-keyframes slideInUp {
@@ -336,7 +417,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: #515151;
 }
 
-.powered-by span, .powered-by a {
+.powered-by span,
+.powered-by a {
     font-weight: 600;
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -485,6 +567,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'Source Serif Pro', serif;
     text-align: left;
 }
+
 .schedule-main-div h4 {
     line-height: 1;
     color: #478232;
@@ -494,8 +577,48 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'Source Serif Pro', serif;
     font-size: 30px;
 }
+
 .image-fluid {
     width: 100%;
     border-radius: 10px;
     object-fit: contain;
+}
+
+.date-schedule {
+    color: #B62E4F !important;
+    border-bottom: 2px solid #B62E4F !important;
+}
+
+.dinner-titel {
+    color: #F99693 !important;
+}
+
+.date-dive {
+    color: #658433 !important;
+    border-bottom: 2px solid #658433 !important;
+}
+
+.event-div {
+    color: #FCCB30 !important;
+}
+
+.function_date {
+    color: #9F8D4A !important;
+    border-bottom: 2px solid #9F8D4A !important;
+}
+
+.my-event {
+    color: #264A76 !important;
+}
+
+.right-side-image-div {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.left-side-image-div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }

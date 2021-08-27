@@ -7,19 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is pyar</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link
-        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
-        rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
     <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/wedding_servey_form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wedding_servey_form.css">
 </head>
 
 <body>
@@ -565,11 +562,13 @@
                 <div class="col-md-5">
                     <input class="survey-input" type="email" placeholder="Link">
                     <input class="survey-input" type="email" placeholder="Link">
-                    <div class="addition-email-div">
-                        <input class="survey-input" type="email" placeholder="Add Additional Link">
-                        <img src="./assets/images/add-email-green.svg" alt="icon">
+                    <div class="customer_records_dynamic width"></div>
+                    <div class="addition-email-div  customer_records position-relative">
+                        <input class="survey-input" name="customer_name" type="text" placeholder="Add Additional E-mail">
+                        <a class="extra-fields-customer">
+                            <img src="./assets/images/add-email-green.svg" alt="" class="add-email-img">
+                        </a>
                     </div>
-
                 </div>
             </div>
             <div class="row mt-4">
@@ -629,6 +628,7 @@
                                 <button type="submit">
                                     Save
                                 </button>
+                                
                             </div>
                         </div>
                     </div>
@@ -637,8 +637,6 @@
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
-    <script
-        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
     <script src="assets/js/countdown.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -658,6 +656,28 @@
         }
         $("#imageUpload").change(function () {
             readURL(this);
+        });
+        $('.extra-fields-customer').click(function () {
+            $('.customer_records').clone().appendTo('.customer_records_dynamic');
+            $('.customer_records_dynamic .customer_records').addClass('single remove position-relative');
+            $('.single .extra-fields-customer').remove();
+            $('.single').append('<a href="#" class="remove-field btn-remove-customer"><img src="./assets/images/registry_link_minus.svg" alt="Icon"></a>');
+            $('.customer_records_dynamic > .single').attr("class", "remove");
+
+            $('.customer_records_dynamic input').each(function () {
+                var count = 0;
+                var fieldname = $(this).attr("name");
+                $(this).attr('name', fieldname + count);
+                $(this).attr('placeholder', 'Link');
+                $(this).attr('class', 'survey-input');
+                count++;
+            });
+
+        });
+
+        $(document).on('click', '.remove-field', function (e) {
+            $(this).parent('.remove').remove();
+            e.preventDefault();
         });
     </script>
 </body>

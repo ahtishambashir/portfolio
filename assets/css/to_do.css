@@ -32,7 +32,7 @@
     top: 10px;
 }
 /* slider */
-.slick-track {
+.owl-carousel .owl-stage-outer  {
     padding-top: 30px;
 }
 .slide {
@@ -75,9 +75,13 @@
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 31%;
     transform: translate(-50%);
     z-index: 9;
+    font-size: 45px;
+    color: #515151;
+    font-weight: 400;
+    list-style: none;
 }
 .prev {
     left: -35px;

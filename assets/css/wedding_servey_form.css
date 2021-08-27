@@ -258,7 +258,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     right: 10px;
     bottom: 10px;
+    cursor: pointer;
 }
+.btn-remove-customer {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+ }
+ .btn-remove-customer img {
+    width: 18px;
+
+ }
+ .customer_records_dynamic .remove {
+    position: relative;
+ }
 
 .save-survey-btn {
     font-family: 'Source Serif Pro', serif;
@@ -271,6 +285,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     outline: none !important;
     border-radius: 6px;
 }
+
 
 /* modal css */
 
