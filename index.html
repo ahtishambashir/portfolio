@@ -12,6 +12,9 @@
         rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
     <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,6 +123,76 @@
                         Home
                     </p>
                 </a>
+                <div class="wraper">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="#" data-toggle="modal" data-target="#addEvent">
+                                <div class="img-div bg-6">
+                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
+                                </div>
+                                <p>
+                                    Add More Events
+                                </p>
+            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" data-toggle="modal" data-target="#addEvent">
+                                <div class="img-div bg-6">
+                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
+                                </div>
+                                <p>
+                                    Add More Events
+                                </p>
+            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" data-toggle="modal" data-target="#addEvent">
+                                <div class="img-div bg-6">
+                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
+                                </div>
+                                <p>
+                                    Add More Events
+                                </p>
+            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" data-toggle="modal" data-target="#addEvent">
+                                <div class="img-div bg-6">
+                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
+                                </div>
+                                <p>
+                                    Add More Events
+                                </p>
+            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" data-toggle="modal" data-target="#addEvent">
+                                <div class="img-div bg-6">
+                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
+                                </div>
+                                <p>
+                                    Add More Events
+                                </p>
+            
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" data-toggle="modal" data-target="#addEvent">
+                                <div class="img-div bg-6">
+                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
+                                </div>
+                                <p>
+                                    Add More Events
+                                </p>
+            
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#" data-toggle="modal" data-target="#addEvent">
                     <div class="img-div bg-6">
                         <img src="./assets/images/add-icon.svg" alt="home-icon">
@@ -488,7 +561,11 @@
             </div>
         </div>
     </div>
+    <div class="inputdiv">
+        <input type="file" accept="image/*" capture="camera">
+    </div>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script
         src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
     <script src="assets/js/countdown.js"></script>
@@ -497,6 +574,35 @@
     <script src="assets/fonts/js/all.min.js"></script>
     <script src="assets/fonts/js/fontawesome.min.js"></script>
     <script>
+         // =====carisul-clider=====
+         $(function () {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 2,
+                margin: 15,
+                dots: false,
+                loop: true,
+                nav: false,
+                autoplay: false,
+                stagePadding: 30,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1170: {
+                        items: 4
+                    }
+                }
+
+            });
+        });
+        // =====carisul-clider close=====
         $('#example2').calendar({
             type: 'date'
         });
