@@ -1,615 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is pyar</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png" />
+    <!-- Bootstrap -->
     <link
-        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
-        rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
-    <link rel="stylesheet" href="assets/fonts/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-</head>
-
-
-
-<body>
-
-
-    <!-- ======Navebar section======    -->
-    <header class="hero-section">
-        <nav class="navbar navbar-expand-lg navbar-light header">
-            <div class="container">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./assets/images/nav_logo.png" class="nav-logo" alt="Logo">
-                </a>
-                <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <!-- <i class="fas fa-bars"></i> -->
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse fun-navbar" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active-nav">
-                            <a class="nav-link" href="./index.html">Dashboard Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./home_page.html">Wedding Website</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./venue_main.html">Venues</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./vender_main.html">Vendors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./survey.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./abuout_us.html">About</a>
-                        </li>
-                        <div class="dropdown mobile-view">
-                            <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <img src="./assets/images/user-image.png" alt="user-image">
-
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a href="./profile.html"><span><img src="./assets/images/profile_user.png"
-                                                alt=""></span>
-                                        My Profile
-                                    </a></li>
-                                <li><a href="#"><span><img src="./assets/images/logOut.png" alt=""></span>
-                                        Log Out
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </ul>
-
-                </div>
-                <div class="dropdown desktop-view">
-                    <a href="#" class="user-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <img src="./assets/images/user-image.png" alt="user-image">
-
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a href="./profile.html"><span><img src="./assets/images/profile_user.png" alt=""></span>
-                                My Profile
-                            </a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#forgetPassword"><span><img
-                                        src="./assets/images/logOut.png" alt=""></span>
-                                Log Out
-                            </a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-        <!-- ======Navebar section close======   -->
+      href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body class="home">
+    <header id="header">
+      <div id="head" class="parallax" parallax-speed="2">
+        <h1 id="logo" class="text-center">
+          <img class="img-circle" src="assets/images/guy.jpg" alt="" />
+          <span class="title">Ahtisham Bashir</span>
+          <span class="tagline"
+            >Front-End UI developer<br />
+            <a href="">ahtishamdoggar@gmail.com</a></span
+          >
+        </h1>
+      </div>
+      <nav class="navbar navbar-default navbar-sticky">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  >More Pages <b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="sidebar-left.html">Left Sidebar</a></li>
+                  <li><a href="sidebar-right.html">Right Sidebar</a></li>
+                  <li><a href="single.html">Blog Post</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </nav>
     </header>
-    <section class="icon-section">
-        <div class="container">
-            <div class="main-icon-div">
-                <a href="./home_dashboard.html">
-                    <div class="img-div bg-1 active">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"
-                            fill="none">
-                            <path
-                                d="M507.769 219.581L433.812 162.767C433.96 162.059 434.043 161.329 434.043 160.579V62.326C434.043 56.3481 429.198 51.5043 423.217 51.5043H355.869C349.889 51.5043 345.043 56.3481 345.043 62.326V94.572L262.598 31.2401C258.708 28.2533 253.295 28.2533 249.403 31.2401L4.2295 219.581C0.553044 222.405 -0.914941 227.254 0.576139 231.642C2.06866 236.03 6.19115 238.984 10.8275 238.984H77.9593V436.363C77.9593 462.045 98.8619 482.938 124.555 482.938H387.449C413.142 482.938 434.045 462.045 434.045 436.363V238.985H501.174C505.81 238.985 509.931 236.034 511.425 231.644C512.915 227.256 511.445 222.406 507.769 219.581ZM366.695 73.1492H412.392V146.312L366.695 111.206V73.1492ZM412.392 436.364C412.392 450.111 401.202 461.296 387.447 461.296H124.554C110.799 461.296 99.6096 450.111 99.6096 436.364V233.539L256.001 115.067L412.393 233.539V436.364H412.392ZM426.856 217.341L262.54 92.8651C258.672 89.9374 253.329 89.9374 249.461 92.8651L85.1448 217.341H42.68L256.001 53.4695L469.32 217.34H426.856V217.341Z"
-                                fill="white" />
-                            <path
-                                d="M213.543 242.723C186.914 242.723 163.376 262.094 156.302 289.833C152.569 304.476 151.806 327.812 169.378 355.837C185.27 381.177 212.653 404.57 250.768 425.364C252.296 426.196 253.983 426.615 255.672 426.615C257.36 426.615 259.046 426.196 260.573 425.364C298.699 404.572 326.091 381.179 341.988 355.839C359.569 327.813 358.808 304.479 355.076 289.836C348.002 262.096 324.458 242.723 297.82 242.723C281.79 242.723 267.205 249.665 255.676 262.55C244.149 249.665 229.57 242.723 213.543 242.723ZM335.235 294.894C338.66 308.329 342.789 355.378 255.673 404.663C168.582 355.379 172.718 308.329 176.143 294.894C180.828 276.527 196.556 263.198 213.543 263.198C226.522 263.198 238.372 270.964 246.915 285.068C248.768 288.131 252.09 290.003 255.67 290.003H255.672C259.252 290.003 262.572 288.134 264.427 285.071C272.976 270.964 284.833 263.198 297.819 263.198C314.817 263.198 330.552 276.53 335.235 294.894Z"
-                                fill="black" />
-                        </svg>
-                        <!-- <img src="./assets/images/home.svg" alt="home-icon"> -->
-                    </div>
-                    <p>
-                        Home
-                    </p>
-                </a>
-                <div class="wraper">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="#" data-toggle="modal" data-target="#addEvent">
-                                <div class="img-div bg-6">
-                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
-                                </div>
-                                <p>
-                                    Add More Events
-                                </p>
-            
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" data-toggle="modal" data-target="#addEvent">
-                                <div class="img-div bg-6">
-                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
-                                </div>
-                                <p>
-                                    Add More Events
-                                </p>
-            
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" data-toggle="modal" data-target="#addEvent">
-                                <div class="img-div bg-6">
-                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
-                                </div>
-                                <p>
-                                    Add More Events
-                                </p>
-            
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" data-toggle="modal" data-target="#addEvent">
-                                <div class="img-div bg-6">
-                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
-                                </div>
-                                <p>
-                                    Add More Events
-                                </p>
-            
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" data-toggle="modal" data-target="#addEvent">
-                                <div class="img-div bg-6">
-                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
-                                </div>
-                                <p>
-                                    Add More Events
-                                </p>
-            
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" data-toggle="modal" data-target="#addEvent">
-                                <div class="img-div bg-6">
-                                    <img src="./assets/images/add-icon.svg" alt="home-icon">
-                                </div>
-                                <p>
-                                    Add More Events
-                                </p>
-            
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" data-toggle="modal" data-target="#addEvent">
-                    <div class="img-div bg-6">
-                        <img src="./assets/images/add-icon.svg" alt="home-icon">
-                    </div>
-                    <p>
-                        Add More Events
-                    </p>
-
-                </a>
-            </div>
+    <main id="main">
+      <div class="container">
+        <div class="row section topspace">
+          <div class="col-md-12">
+            <p class="lead text-center text-muted">
+              Let me tell you something my friend. hope is a dangerous thing.
+              hope can drive a man insane. you
+              <a href="about.html">measure</a> yourself by the people who
+              measure themselves by you. it only took me
+              <a href="sidebar-right.html">six days</a>.
+            </p>
+          </div>
         </div>
-    </section>
-    <div class="main-div">
-        <section class="welcome-section bg-render">
-            <div class="wave bg-render"></div>
-            <div class="container">
-                <div class="welcome-head">
-                    <h2>Welcome, Farah & Shahid!</h2>
-                    <a href="#">Edit My Profile</a>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">
-                        <p class="welcome-detail">
-                            Great progress on your planning! We’re here for you, so send our team a message whenever you
-                            need help.
-                        </p>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="counter-main-div">
-                            <img src="./assets/images/counter-img.svg" alt="">
-                        </div>
-                        <div class="camera-div">
-                            <a href="#">
-                                <img src="./assets/images/camera-icon.svg" alt="">
-                            </a>
-                        </div>
-                        <div id="countdown" class="count-down-div">
-                            <ul>
-                                <li><span id="days"></span>days</li>
-                                <li><span id="hours"></span>Hours</li>
-                                <li><span id="minutes"></span>Minutes</li>
-                                <li><span id="seconds"></span>Seconds</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- / section -->
+        <div class="row section featured topspace">
+          <h2 class="section-title"><span>Services</span></h2>
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <h3 class="text-center">Custom website design</h3>
+              <p>
+                I don't think they tried to market it to the billionaire,
+                spelunking, base-jumping crowd. i did the same thing to gandhi,
+                he didn't eat for three weeks. i once heard a wise man say there
+                are no perfect men.
+              </p>
+              <p class="text-center">
+                <a href="" class="btn btn-action">Read more</a>
+              </p>
             </div>
-        </section>
-        <section class="venue-section margin-top">
-            <div class="container">
-                <h2 class="venue-head">
-                    Your Venue(s)
-                </h2>
-                <div class="venue-main-div">
-                    <p>
-                        Find trusted hand-selected wedding venues for your big day.
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a href="#">
-                                <img src="./assets/images/second_icon.png" alt="">
-                                <span>Browse Venues</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a href="#">
-                                <img src="./assets/images/Heart_icon.png" alt="">
-                                <span>Save Your Favorites</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a href="#" data-toggle="modal" data-target="#addVenue">
-                                <img src="./assets/images/venu-add.svg" alt="">
-                                <span>Add Your Own</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-3">
+              <h3 class="text-center">React JSX</h3>
+              <p>
+                I don't think they tried to market it to the billionaire,
+                spelunking, base-jumping crowd. i did the same thing to gandhi,
+                he didn't eat for three weeks. i once heard a wise man say there
+                are no perfect men.
+              </p>
+              <p class="text-center">
+                <a href="" class="btn btn-action">Read more</a>
+              </p>
             </div>
-        </section>
-        <section class="venue-section">
-            <div class="container">
-                <h2 class="venue-head">
-                    Your Vendor(s)
-                </h2>
-                <div class="venue-main-div">
-                    <p>
-                        Select the best team to bring your wedding to life.
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a href="#">
-                                <img src="./assets/images/second_icon.png" alt="">
-                                <span>Browse Vendor`</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a href="#">
-                                <img src="./assets/images/Heart_icon.png" alt="">
-                                <span>Save Your Favorites</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a href="#" data-toggle="modal" data-target="#addVenue">
-                                <img src="./assets/images/venu-add.svg" alt="">
-                                <span>Add Your Own</span>
-                            </a>
-                            <div class="modal fade" id="addVender" tabindex="-1" role="dialog"
-                                aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal_center">
-                                    <div class="modal-dialog add-modal opacity-animate3">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-hidden="true">
-                                                    <i class="fas fa-times"></i>
-                                                </button>
-                                                <div class="modal_content">
-                                                    <div class="modal-inner-div">
-                                                        <h2>
-                                                            Add Vender
-                                                        </h2>
-                                                        <input type="text" class="vender-input"
-                                                            placeholder="EM Photography">
-                                                        <button type="button" class="add-btn">Add Vendor</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-3">
+              <h3 class="text-center">Web development</h3>
+              <p>
+                I don't think they tried to market it to the billionaire,
+                spelunking, base-jumping crowd. i did the same thing to gandhi,
+                he didn't eat for three weeks. i once heard a wise man say there
+                are no perfect men.
+              </p>
+              <p class="text-center">
+                <a href="" class="btn btn-action">Read more</a>
+              </p>
             </div>
-        </section>
-        <section class="wedding-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pr-lg-5 padding-mobile">
-                        <div class="wed-main-div">
-                            <h2 class="wed-head">
-                                Wedding Website
-                            </h2>
-                        </div>
-                        <div class="wed-inner-div">
-                            <p class="wed-detail">
-                                Your personal wedding website to keep your guests informed on the wedding festivities.
-                            </p>
-                            <img src="./assets/images/wedding-img.png" alt="">
-                            <a href="#" class="link-one">
-                                Create Your Own Wedding Website
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 padding-mobile">
-                        <div class="wed-main-div">
-                            <div class="left-div">
-                                <h2 class="wed-head">
-                                    Budget
-                                </h2>
-                            </div>
-                            <div class="right-div">
-                                <a data-toggle="modal" data-target="#addVenue" href="./budget.html">
-                                    Add Cost
-                                </a>
-                            </div>
-                        </div>
-                        <p class="wed-detail">
-                            Organize your budget as a whole, by event, or by categpry.
-                        </p>
-                        <h3 class="estimate-head">
-                            Estimated Budget
-                        </h3>
-                        <h2 class="price">
-                            $0
-                        </h2>
-                        <h3 class="estimate-head-2">
-                            Final Cost
-                        </h3>
-                        <h2 class="price">
-                            $0
-                        </h2>
-                    </div>
-                </div>
+            <div class="col-sm-6 col-md-3">
+              <h3 class="text-center">Front-End development</h3>
+              <p>
+                I don't think they tried to market it to the billionaire,
+                spelunking, base-jumping crowd. i did the same thing to gandhi,
+                he didn't eat for three weeks. i once heard a wise man say there
+                are no perfect men.
+              </p>
+              <p class="text-center">
+                <a href="" class="btn btn-action">Read more</a>
+              </p>
             </div>
-        </section>
-        <section class="wedding-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pr-lg-5 padding-mobile">
-                        <div class="wed-main-div">
-                            <div class="left-div">
-                                <h2 class="wed-head">
-                                    To Do List
-                                </h2>
-                            </div>
-                            <div class="right-div">
-                                <a data-toggle="modal" data-target="#addVenue" href="./to_do.html">
-                                    Add To-Do
-                                </a>
-                            </div>
-                        </div>
-                        <p class="wed-detail">
-                            Keep all your wedding tasks in one place.
-                        </p>
-                        <h2 class="guest">
-                            0
-                            <span>
-                                Task(s)
-                            </span>
-                        </h2>
-
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="wed-main-div">
-                            <div class="left-div">
-                                <h2 class="wed-head">
-                                    Guest List
-                                </h2>
-                            </div>
-                            <div class="right-div">
-                                <a data-toggle="modal" data-target="#addVenue" href="./guest_list.html">
-                                    Add Guest
-                                </a>
-                            </div>
-                        </div>
-                        <p class="wed-detail">
-                            Manage your guest list as a whole and by event.
-                        </p>
-                        <h2 class="guest">
-                            0
-                            <span>
-                                Guest(s)
-                            </span>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="venue-section">
-            <div class="container">
-                <h2 class="venue-head">
-                    Inspiration
-                </h2>
-                <div class="venue-main-div">
-                    <p>
-                        Select the best team to bring your wedding to life.
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="venu-div">
-                            <a data-toggle="modal" data-target="#addVenue" href="#">
-                                <img src="./assets/images/venu-add.svg" alt="">
-                                <span>Add Your Own</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal_center">
-            <div class="modal-dialog add-modal opacity-animate3">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <div class="modal_content">
-                            <div class="modal-inner-div">
-                                <h2>
-                                    Add Event
-                                </h2>
-                                <select name="add_Event" id="add_Event" class="add-event">
-                                    <option value="nikah">Add new event</option>
-                                    <option value="nikah">Nikkah</option>
-                                    <option value="nikah">Nikkah</option>
-                                    <option value="nikah">Nikkah</option>
-                                </select>
-                                <div class="ui calendar" id="example2">
-                                    <div class="ui input left icon datepicker">
-
-                                        <input type="text" placeholder="Add event date">
-                                        <i class="calendar icon"></i>
-                                    </div>
-                                </div>
-                                <button type="button" class="add-event-btn">
-                                    Add Event
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+        <!-- / section -->
 
-    <div class="modal fade" id="addVenue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal_center">
-            <div class="modal-dialog add-modal opacity-animate3">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <div class="modal_content">
-                            <div class="modal-inner-div">
-                                <h3>
-                                    Disclaimer!
-                                </h3>
-                                <p> No events are added. Please add atleast one event to continue. </p>
-                                <button type="button" class="add-btn">Continue</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row section recentworks topspace">
+          <h2 class="section-title"><span>Recent Works</span></h2>
+          <div class="thumbnails recentworks row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                  <img src="assets/images/s1.jpg" alt="" />
+                  <span class="cover"
+                    ><span class="more">See details &rarr;</span></span
+                  >
+                </span>
+                <span class="title">alphas - big data solutions</span>
+              </a>
+              <span class="details"
+                ><a href="">Web design</a> | <a href="">React JSX</a> |
+                <a href="">Logotype</a></span
+              >
+              <h4></h4>
+              <p></p>
             </div>
-        </div>
-    </div>
-    <div class="modal fade" id="forgetPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal_center">
-            <div class="modal-dialog add-modal opacity-animate3">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <div class="modal_content">
-                            <div class="logo-div">
-                                <img src="./assets/images/nav_logo.png" alt="logo">
-                            </div>
-                            <h2 class="hire_us_head">Forgot Password</h2>
-                            <p class="modal_descripition">
-                                Please enter the e-mail associated
-                                with your account.
-                            </p>
-                            <input class="login_input" type="email" placeholder="Enter E-mail">
-                            <button type="submit" class="input_login_btn">
-                                Log In
-                            </button>
-                            <h6 class="sgn_up_hed">
-                                Back to
-                                <a href="#" data-toggle="modal" data-target="#signUpModal">Log in</a>
-                            </h6>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                  <img src="assets/images/s1.jpg" alt="" />
+                  <span class="cover"
+                    ><span class="more">See details &rarr;</span></span
+                  >
+                </span>
+                <span class="title"
+                  >Ispyar - development services for people</span
+                >
+              </a>
+              <span class="details"
+                ><a href="">Web design</a> | <a href="">UI design</a></span
+              >
+              <h4></h4>
+              <p></p>
             </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                  <img src="assets/images/s1.jpg" alt="" />
+                  <span class="cover"
+                    ><span class="more">See details &rarr;</span></span
+                  >
+                </span>
+                <span class="title"
+                  >Novaclouds - interior and patio design</span
+                >
+              </a>
+              <span class="details"
+                ><a href="">Web design</a> | <a href="">UI design</a></span
+              >
+              <h4></h4>
+              <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                  <img src="assets/images/s1.jpg" alt="" />
+                  <span class="cover"
+                    ><span class="more">See details &rarr;</span></span
+                  >
+                </span>
+                <span class="title"
+                  >Pure ipsum - development services for people</span
+                >
+              </a>
+              <span class="details"
+                ><a href="">Web design</a> | <a href="">Wordpress</a></span
+              >
+              <h4></h4>
+              <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                  <img src="assets/images/s1.jpg" alt="" />
+                  <span class="cover"
+                    ><span class="more">See details &rarr;</span></span
+                  >
+                </span>
+                <span class="title"
+                  >Lorem studios - interior and patio design</span
+                >
+              </a>
+              <span class="details"
+                ><a href="">Web design</a> | <a href="">Logotype</a></span
+              >
+              <h4></h4>
+              <p></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <a class="thumbnail" href="sidebar-right.html">
+                <span class="img">
+                  <img src="assets/images/s1.jpg" alt="" />
+                  <span class="cover"
+                    ><span class="more">See details &rarr;</span></span
+                  >
+                </span>
+                <span class="title"
+                  >Lorem studios - interior and patio design</span
+                >
+              </a>
+              <span class="details"
+                ><a href="">Web design</a> | <a href="">Logotype</a></span
+              >
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="inputdiv">
-        <input type="file" multiple accept="image/*,audio/*,video/*, file/*" capture="camera">
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script
-        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/fonts/js/all.min.js"></script>
-    <script src="assets/fonts/js/fontawesome.min.js"></script>
-    <script>
-         // =====carisul-clider=====
-         $(function () {
-            // Owl Carousel
-            var owl = $(".owl-carousel");
-            owl.owlCarousel({
-                items: 2,
-                margin: 15,
-                dots: false,
-                loop: true,
-                nav: false,
-                autoplay: false,
-                stagePadding: 30,
-                autoplayTimeout: 8500,
-                smartSpeed: 450,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 3
-                    },
-                    1170: {
-                        items: 4
-                    }
-                }
-
-            });
-        });
-        // =====carisul-clider close=====
-        $('#example2').calendar({
-            type: 'date'
-        });
-        $('.datepicker').keypress(function (e) {
-            e.preventDefault();
-        })
-    </script>
-</body>
-
+        <!-- /section -->
+        <div class="row section topspace">
+          <div class="panel panel-cta">
+            <div class="panel-body">
+              <div class="col-lg-8">
+                <p>
+                  A simple, nice-looking <b>call to action box</b>. Boxing is
+                  about respect. getting it for yourself, and taking it away
+                  from the other guy. no, this is mount everest.
+                </p>
+              </div>
+              <div class="col-lg-4 text-right">
+                <a
+                  href="http://www.gettemplate.com/downloads/initio.zip "
+                  class="btn btn-primary btn-lg"
+                  >Download template</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /section -->
+        <div class="row section clients topspace">
+          <h2 class="section-title"><span>Clients</span></h2>
+          <div class="col-lg-12">
+            <p>
+              <img src="assets/images/sample_clients.png" alt="" />
+            </p>
+          </div>
+        </div>
+        <!-- /section -->
+      </div>
+      <!-- /container -->
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 widget">
+            <h3 class="widget-title">Contact</h3>
+            <div class="widget-body">
+              <p>
+                +923338679918<br />
+                <a href="mailto:htishamdoggar@gmail.com"
+                  >ahtishamdoggar@gmail.com</a
+                ><br />
+                <br />
+                Lahore, Pakistan
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 widget">
+            <h3 class="widget-title">Follow me</h3>
+            <div class="widget-body">
+              <p class="follow-me-icons">
+                <a href=""><i class="fa fa-linkdin fa-2"></i></a>
+                <a href=""><i class="fa fa-github fa-2"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 widget">
+            <h3 class="widget-title">Text widget</h3>
+            <div class="widget-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+                nihil natus explicabo ipsum quia iste aliquid repellat eveniet
+                velit ipsa sunt libero sed aperiam id soluta officia asperiores
+                adipisci maxime!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+                nihil natus explicabo ipsum quia iste aliquid repellat eveniet
+                velit ipsa sunt libero sed aperiam id soluta officia asperiores
+                adipisci maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of widgets -->
+      </div>
+    </footer>
+    <footer id="underfooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p>Lahore, Pakistan</p>
+            </div>
+          </div>
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="text-right">Copyright &copy; 2014, Ahtisham Bashir</p>
+            </div>
+          </div>
+        </div>
+        <!-- /row of widgets -->
+      </div>
+    </footer>
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/template.js"></script>
+  </body>
 </html>
